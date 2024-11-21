@@ -77,7 +77,7 @@ export const companyDetails = {
   whatsapp: "+91-9842149738",
   email: "example@domainname.com",
   address:
-    "RTF NO 938/3B3A3, LR hlls, V kevv Road, xyz, 873899, abc District, Tamil Nadu, India",
+    "101,Unit 101, Oxford Towers, 139, HAL Old Airport Rd, Kodihalli, Bengaluru, Karnataka 560008",
 };
 
 // website routes

@@ -99,8 +99,8 @@ const Testimonials = () => {
             >
               <p className="italic desc">{item.desc}</p>
               <div className="flex flex-col gap-2">
-                <div className="flex gap-2">
-                  <div className="h-[3rem] w-[3rem] bg-gray-300 rounded-full object-cover" />
+                <div className="flex items-center gap-2">
+                  <div className="h-[3rem] min-w-[3rem] bg-gray-300 rounded-full object-cover" />
 
                   {/* <img
                     src={""}
