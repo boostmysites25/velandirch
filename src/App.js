@@ -26,8 +26,9 @@ import RPA from "./componets/website/serivces/RPA.jsx";
 AOS.init({
   once: true,
   duration: 500,
+  offset: 0,
 });
-AOS.refresh();
+
 export default function App() {
   return (
     <SpinnerContextProvider>
