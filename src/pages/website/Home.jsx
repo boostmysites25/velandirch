@@ -91,8 +91,13 @@ const Home = () => {
         </div>
       </section>
       <OurServices length={3} />
-      <section className="py-[3rem] bg-[#333333] text-white">
+      <section
+        // data-aos-anchor-placement="top-bottom"
+        // data-aos-anchor="selector"
+        className="py-[3rem] bg-[#333333] text-white"
+      >
         <div
+          // data-aos-anchor-placement="bottom-center"
           data-aos="fade-up"
           className="wrapper text-center flex flex-col gap-3"
         >

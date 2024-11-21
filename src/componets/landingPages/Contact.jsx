@@ -3,13 +3,13 @@ import React from "react";
 const Contact = () => {
   return (
     <div
-      data-aos="fade-up"
       id="contact"
       className="py-[3rem] text-primarytextcolor bg-backgroundcolor"
     >
       <div className="wrapper">
         <div className="h-full grid md:grid-cols-2 gap-10 py-10">
-          <div data-aos="fade-right" className="flex flex-col gap-4">
+          {/* data-aos="fade-right" */}
+          <div className="flex flex-col gap-4">
             <h2 className="heading-2">Get In Touch With Us!</h2>
             <p className="desc">
               Get in touch with
@@ -20,7 +20,7 @@ const Contact = () => {
             </p>
           </div>
           <form
-            data-aos="fade-left"
+            // data-aos="fade-left"
             className="flex flex-col gap-4 md:px-[1rem]"
           >
             <div className="">
