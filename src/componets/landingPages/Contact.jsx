@@ -2,7 +2,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section
+    <div
+      data-aos="fade-up"
       id="contact"
       className="py-[3rem] text-primarytextcolor bg-backgroundcolor"
     >
@@ -60,7 +61,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

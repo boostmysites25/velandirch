@@ -22,6 +22,15 @@ import aboutUsGridImg4 from "./assets/images/aboutus-png4.png";
 import aboutUsGridImg5 from "./assets/images/aboutus-png5.png";
 import profileImg1 from "./assets/images/profileimg-1.png";
 import profileImg2 from "./assets/images/profileimg-2.png";
+import serviceswebdevelopment from "./assets/images/services/serviceswebdevelopment.jpg";
+import serviceaidevelopment from "./assets/images/services/serviceaidevelopment.jpg";
+import chatbotdevelopment from "./assets/images/services/chatbotdevelopment.jpg";
+import datadevelopment from "./assets/images/services/datadevelopment.jpg";
+import gamedevelopment from "./assets/images/services/gamedevelopment.jpg";
+import blockchaindevelopment from "./assets/images/services/blockchaindevelopment.jpg";
+import machinelearning from "./assets/images/services/machinelearning.jpg";
+import clouddevelopment from "./assets/images/services/clouddevelopment.jpg";
+import rpa from "./assets/images/services/rpa.jpg";
 import { lazy } from "react";
 const Home = lazy(() => import("./pages/website/Home"));
 const Services = lazy(() => import("./pages/website/Services"));
@@ -51,6 +60,15 @@ export {
   aboutUsGridImg3,
   aboutUsGridImg4,
   aboutUsGridImg5,
+  serviceswebdevelopment,
+  serviceaidevelopment,
+  chatbotdevelopment,
+  datadevelopment,
+  gamedevelopment,
+  blockchaindevelopment,
+  machinelearning,
+  clouddevelopment,
+  rpa,
 };
 
 // company details
@@ -262,24 +280,24 @@ export const allServices = [
 // about us page why choose content
 export const whyChooseUsContent = [
   {
-    title: "Customized Solutions for Every Business",
-    desc: "We believe in a tailored approach because every business is unique. We take time to understand your goals and create custom digital solutions that align perfectly with your vision.",
+    title: "Transforming Vision into Reality",
+    desc: "We collaborate closely to understand your vision and turn it into innovative digital solutions that exceed expectations, tailored specifically to your business needs.",
   },
   {
-    title: "Cutting-Edge Technology",
-    desc: "Our team is equipped with the latest tools and technologies to bring your project to life, ensuring that you stay ahead in the ever-changing digital space.",
+    title: "Empowering Businesses with Technology",
+    desc: "Our expertise in cutting-edge technologies ensures that every solution we deliver helps your business thrive in today’s competitive landscape.",
   },
   {
-    title: "Security and Reliability",
-    desc: "At VKM Techno Solutions, we take security seriously. Our solutions are built with stringent security protocols to safeguard your business data and protect it from cyber threats.",
+    title: "Driving Efficiency with Innovation",
+    desc: "From automating processes to building intelligent solutions, we bring innovation to the forefront, enabling your business to operate smarter and more efficiently.",
   },
   {
-    title: "Long-Term Partnerships",
-    desc: "We’re not just a service provider; we’re your strategic partner. From conceptualization to deployment and ongoing support, we’re with you every step of the way, ensuring your success in the digital landscape.",
+    title: "Data-Driven Decision Making",
+    desc: "We provide insightful analytics and intelligence to help you make informed decisions, uncover opportunities, and stay ahead in your industry.",
   },
   {
-    title: "Agility and Innovation",
-    desc: "As technology evolves, so do we. We continuously adapt to the latest trends and innovations to deliver products that not only meet your current needs but are scalable for the future.",
+    title: "Commitment to Excellence",
+    desc: "We are dedicated to delivering exceptional service and long-term partnerships, supporting your journey from idea to execution and beyond.",
   },
 ];
 

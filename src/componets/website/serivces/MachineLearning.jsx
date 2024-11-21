@@ -1,5 +1,6 @@
 import React from "react";
-import { allServices } from "../../../constant";
+import { allServices, machinelearning } from "../../../constant";
+import Testimonials from "../../common/Testimonials";
 
 const MachineLearning = () => {
   const details = allServices[6];
@@ -8,7 +9,7 @@ const MachineLearning = () => {
     <div className="flex flex-col gap-10">
       <img
         data-aos="fade-up"
-        src={""}
+        src={machinelearning}
         loading="lazy"
         className="h-[25rem] object-cover rounded-3xl object-center"
         alt="web development"
@@ -39,6 +40,7 @@ const MachineLearning = () => {
             ))}
           </ul>
         </div> */}
+        <Testimonials />
       </div>
     </div>
   );

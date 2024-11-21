@@ -8,6 +8,8 @@ import { homeBannerVideo } from "../../constant";
 import OurServices from "../../componets/website/OurServices";
 import EndlessOpportunitiesSection from "../../componets/common/EndlessOpportunitiesSection";
 import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
+import Testimonials from "../../componets/common/Testimonials";
+import Faqs from "../../componets/common/Faqs";
 
 const Home = () => {
   return (
@@ -47,7 +49,7 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="py-[5rem] bg-backgroundcolor text-primarytextcolor wrapper">
+      <section className="py-[3rem] bg-backgroundcolor text-primarytextcolor wrapper">
         <div
           data-aos="fade-right"
           className="gradient-rounded-text-box mx-auto lg:mx-0"
@@ -61,18 +63,13 @@ const Home = () => {
                 Enhancing Operations with Advanced Technology.
               </h2>
               <p className="desc">
-                At VKM Techno Solutions, we take immense pride in delivering
-                top-notch digital solutions that cater to the evolving needs of
-                today’s dynamic business environment. We are passionate about
-                innovation, creativity, and excellence, and these principles
-                guide every project we undertake. As a trusted technology
-                partner, we are dedicated to transforming your bold ideas into
-                reality through cutting-edge technology and innovative digital
-                strategies. Our core expertise spans across Web Development, App
-                Development, UX/UI Design, Chatbot Development, Machine Learning
-                Solutions, and Game Development—empowering businesses to not
-                just survive but to thrive and grow in the fast-paced,
-                competitive digital landscape.
+                Welcome to VELANDIRCH TECHNOLOGIES —where technology meets
+                innovation to drive your success. We specialize in creating
+                powerful digital experiences and delivering solutions that
+                simplify complex challenges. With a wide range of services from
+                mobile and web development to AI and data intelligence, we’re
+                here to help you unlock new potential and stay ahead in today’s
+                fast-paced digital landscape.
               </p>
             </div>
             <div className="flex gap-5 mt-4 justify-center lg:justify-start">
@@ -94,7 +91,7 @@ const Home = () => {
         </div>
       </section>
       <OurServices length={3} />
-      <section className="py-[5rem] bg-[#333333] text-white">
+      <section className="py-[3rem] bg-[#333333] text-white">
         <div
           data-aos="fade-up"
           className="wrapper text-center flex flex-col gap-3"
@@ -122,8 +119,12 @@ const Home = () => {
       {/* <Faqs /> */}
       <WhyChooseUs />
       <UnlockEfficiency />
-      <EndlessOpportunitiesSection />
-      <Contact />
+      <Testimonials />
+      <Faqs />
+      {/* <EndlessOpportunitiesSection /> */}
+      <div>
+        <Contact />
+      </div>
     </>
   );
 };

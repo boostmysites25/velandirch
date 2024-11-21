@@ -1,5 +1,6 @@
 import React from "react";
-import { allServices } from "../../../constant";
+import { allServices, blockchaindevelopment } from "../../../constant";
+import Testimonials from "../../common/Testimonials";
 
 const BlockchainDevelopment = () => {
   const details = allServices[5];
@@ -7,7 +8,7 @@ const BlockchainDevelopment = () => {
     <div className="flex flex-col gap-10">
       <img
         data-aos="fade-up"
-        src={""}
+        src={blockchaindevelopment}
         loading="lazy"
         className="h-[25rem] object-cover rounded-3xl object-center"
         alt="web development"
@@ -38,6 +39,7 @@ const BlockchainDevelopment = () => {
             ))}
           </ul>
         </div> */}
+        <Testimonials />
       </div>
     </div>
   );

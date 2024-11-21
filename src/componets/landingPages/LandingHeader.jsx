@@ -36,7 +36,7 @@ const LandingHeader = () => {
   };
 
   return (
-    <div className="py-4 fixed top-0 w-full bg-black/60 backdrop-blur-md z-50 text-white">
+    <div className="py-4 fixed top-0 w-full bg-black/10 backdrop-blur-md z-50 text-white">
       <div className="wrapper flex justify-between items-center gap-10">
         <div className="flex justify-between items-center gap-20 w-full pl-[1rem] lg:pl-0">
           <Link smooth={true} to="banner" className="cursor-pointer">

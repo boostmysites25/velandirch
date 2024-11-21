@@ -1,5 +1,6 @@
 import React from "react";
-import { allServices } from "../../../constant";
+import { allServices, chatbotdevelopment } from "../../../constant";
+import Testimonials from "../../common/Testimonials";
 
 const ChatbotDevelopment = () => {
   const details = allServices[2];
@@ -8,7 +9,7 @@ const ChatbotDevelopment = () => {
     <div className="flex flex-col gap-10">
       <img
         data-aos="fade-up"
-        src={""}
+        src={chatbotdevelopment}
         loading="lazy"
         className="h-[25rem] object-cover rounded-3xl object-center"
         alt="web development"
@@ -39,6 +40,7 @@ const ChatbotDevelopment = () => {
             ))}
           </ul>
         </div> */}
+        <Testimonials />
       </div>
     </div>
   );

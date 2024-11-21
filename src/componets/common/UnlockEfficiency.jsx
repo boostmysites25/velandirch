@@ -9,10 +9,11 @@ const UnlockEfficiency = () => {
         className="wrapper flex flex-col text-primarytextcolor items-center gap-5 text-center"
       >
         <div className="gradient-rounded-text-box">Unlock Efficiency</div>
-        <h2 className="heading-2">Drive Innovation with Our IT Services</h2>
+        <h2 className="heading-2">Ready to Elevate Your Business?</h2>
         <p className="desc max-w-[40rem] text-center">
-          Empowering businesses to not just survive but to thrive and grow in
-          the fast-paced, competitive digital landscape.
+          Our mission is to provide solutions that grow with you. Discover how
+          our services can empower your business to achieve new heights—let’s
+          connect and start building the future together!
         </p>
         <Link to="/contact-us" className="primary-btn mt-3">
           Contact Us

@@ -1,5 +1,6 @@
 import React from "react";
-import { allServices } from "../../../constant";
+import { allServices, datadevelopment } from "../../../constant";
+import Testimonials from "../../common/Testimonials";
 
 const DataAnalytics = () => {
   const details = allServices[3];
@@ -8,7 +9,7 @@ const DataAnalytics = () => {
     <div className="flex flex-col gap-10">
       <img
         data-aos="fade-up"
-        src={""}
+        src={datadevelopment}
         loading="lazy"
         className="h-[25rem] object-cover rounded-3xl object-center"
         alt="web development"
@@ -39,6 +40,7 @@ const DataAnalytics = () => {
             ))}
           </ul>
         </div> */}
+        <Testimonials />
       </div>
     </div>
   );

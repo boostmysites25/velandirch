@@ -233,7 +233,7 @@ export const LandingPage = ({ page }) => {
       <div
         data-aos="fade-up"
         id="contacts"
-        className="pb-[5rem] text-primarytextcolor bg-backgroundcolor"
+        className="py-[5rem] text-primarytextcolor bg-backgroundcolor"
       >
         <div className="wrapper">
           <div className="h-full grid md:grid-cols-2 gap-10 py-5">

@@ -70,7 +70,7 @@ const Testimonials = () => {
     }
   };
   return (
-    <div className="py-[5rem]">
+    <div className="py-[3rem]">
       <div className="wrapper flex flex-col items-center gap-7">
         <div className="gradient-rounded-text-box" data-aos="fade-up">
           Testimonials
@@ -90,11 +90,13 @@ const Testimonials = () => {
               <p className="italic desc">{item.desc}</p>
               <div className="flex flex-col gap-2">
                 <div className="flex gap-2">
-                  <img
-                    src={item.profileImg}
+                  <div className="h-[3rem] w-[3rem] bg-gray-300 rounded-full object-cover" />
+
+                  {/* <img
+                    src={""}
                     alt={item.name}
                     className="h-full w-[3rem] rounded-full object-cover"
-                  />
+                  /> */}
                   <div className="flex flex-col h-full">
                     <p className="font-medium">{item.name}</p>
                     <p className="text-sm">{item.role}</p>

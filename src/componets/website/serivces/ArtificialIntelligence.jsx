@@ -1,4 +1,5 @@
-import { allServices } from "../../../constant";
+import { allServices, serviceaidevelopment } from "../../../constant";
+import Testimonials from "../../common/Testimonials";
 
 const ArtificialIntelligence = () => {
   const details = allServices[1];
@@ -6,7 +7,7 @@ const ArtificialIntelligence = () => {
     <div className="flex flex-col gap-10">
       <img
         data-aos="fade-up"
-        src={""}
+        src={serviceaidevelopment}
         loading="lazy"
         className="h-[25rem] object-cover rounded-3xl object-center"
         alt="web development"
@@ -36,6 +37,7 @@ const ArtificialIntelligence = () => {
               </li>
             ))}
           </ul> */}
+          <Testimonials />
         </div>
       </div>
     </div>

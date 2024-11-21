@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { LandingPage } from "./pages/landingPages/LandingPage";
@@ -7,7 +7,7 @@ import LandingFooter from "./componets/landingPages/LandingFooter";
 import WebsiteHeader from "./componets/website/WebsiteHeader";
 import WebsiteFooter from "./componets/website/WebsiteFooter";
 import { routes } from "./constant";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { LoadingSpinner } from "./componets/common/LoadingSpinner";
 import SpinnerContextProvider, {
   LoadingSpinnerContext,
@@ -27,11 +27,13 @@ AOS.init({
   once: true,
   duration: 500,
 });
+AOS.refresh();
 export default function App() {
   return (
     <SpinnerContextProvider>
       <LoadingSpinnerContext />
       <Suspense fallback={<LoadingSpinner />}>
+        <ScrollToTop />
         <Routes>
           {/* Website Pages */}
           {routes.map(({ component, name, path }, index) => (
@@ -91,3 +93,14 @@ export default function App() {
     </SpinnerContextProvider>
   );
 }
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
+  return null;
+};
