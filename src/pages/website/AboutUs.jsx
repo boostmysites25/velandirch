@@ -17,13 +17,16 @@ const AboutUs = () => {
     <>
       <div
         data-aos="fade-down"
-        className="h-[40vh] sm:h-[55vh] md:h-[70vh] relative"
+        className=" h-[40vh] sm:h-[55vh] md:h-[70vh] relative"
       >
         <img
           src={aboutUsBanner}
           className="object-cover object-[100%_35%] h-full w-full"
           alt=""
         />
+        <h2 className="font-raleway text-[2.18rem] md:text-7xl font-bold leading-tight text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[10%] text-center">
+          About Us
+        </h2>
       </div>
       <div className="py-[5rem] text-primarytextcolor text-center">
         <div className="wrapper flex flex-col items-center gap-5 mb-[5rem]">

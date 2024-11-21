@@ -61,20 +61,32 @@ const WhyChooseUs = () => {
   return (
     <section className="py-[3rem] bg-backgroundcolor">
       <div className="wrapper text-center text-primarytextcolor flex flex-col gap-7">
-        <div data-aos="fade-up" className="gradient-rounded-text-box mx-auto">
+        <div
+          data-aos-offset={-400}
+          data-aos="fade-up"
+          className="gradient-rounded-text-box mx-auto"
+        >
           Why Partner with Us
         </div>
         <div className="flex flex-col gap-5">
-          <h2 data-aos="fade-up" className="heading-2">
+          <h2 data-aos-offset={-400} data-aos="fade-up" className="heading-2">
             The Driving Force Behind Our IT Solutions
           </h2>
-          <p data-aos="fade-up" className="desc max-w-[40rem] mx-auto">
+          <p
+            data-aos-offset={-400}
+            data-aos="fade-up"
+            className="desc max-w-[40rem] mx-auto"
+          >
             At VELANDIRCH TECHNOLOGIES, we’re dedicated to delivering solutions
             that are custom-fit to your business. Our team is passionate about
             innovation and works alongside you to understand your vision,
             transforming it into a digital reality that exceeds expectations.
           </p>
-          <div data-aos="fade-up" className="w-full block lg:hidden">
+          <div
+            data-aos-offset={-400}
+            data-aos="fade-up"
+            className="w-full block lg:hidden"
+          >
             <img
               src={whyChooseUsPng}
               className="object-contain max-h-[20rem] mx-auto"
@@ -84,6 +96,7 @@ const WhyChooseUs = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-5 mt-9">
             <div className="flex flex-col gap-5 h-full">
               <div
+                data-aos-offset={-400}
                 data-aos="fade-right"
                 className="p-5 border border-primary rounded-xl w-full h-full"
               >
@@ -101,6 +114,7 @@ const WhyChooseUs = () => {
                 </p>
               </div>
               <div
+                data-aos-offset={-400}
                 data-aos="fade-right"
                 className="p-5 border border-primary rounded-xl w-full h-full"
               >
@@ -118,7 +132,11 @@ const WhyChooseUs = () => {
                 </p>
               </div>
             </div>
-            <div data-aos="fade-up" className="w-full lg:block hidden">
+            <div
+              data-aos-offset={-400}
+              data-aos="fade-up"
+              className="w-full lg:block hidden"
+            >
               <img
                 src={whyChooseUsPng}
                 className="object-contain max-h-[25rem] mx-auto"
@@ -127,6 +145,7 @@ const WhyChooseUs = () => {
             </div>
             <div className="flex flex-col gap-5 h-full">
               <div
+                data-aos-offset={-400}
                 data-aos="fade-left"
                 className="p-5 border border-primary rounded-xl w-full h-full"
               >
@@ -144,6 +163,7 @@ const WhyChooseUs = () => {
                 </p>
               </div>
               <div
+                data-aos-offset={-400}
                 data-aos="fade-left"
                 className="p-5 border border-primary rounded-xl w-full h-full"
               >
@@ -166,6 +186,7 @@ const WhyChooseUs = () => {
         <div className="pt-[3rem]">
           <div
             ref={ref}
+            data-aos-offset={-400}
             data-aos="fade-up"
             className="w-full text-white grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-5 rounded-3xl bg-gradient-to-r from-secondary to-primary p-[2rem]"
           >

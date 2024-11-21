@@ -5,6 +5,7 @@ const UnlockEfficiency = () => {
   return (
     <section className="py-[3rem] text-primarytextcolor bg-backgroundcolor">
       <div
+        data-aos-offset={-400}
         data-aos="fade-up"
         className="wrapper flex flex-col text-primarytextcolor items-center gap-5 text-center"
       >

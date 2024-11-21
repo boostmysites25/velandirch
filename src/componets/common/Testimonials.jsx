@@ -72,16 +72,26 @@ const Testimonials = () => {
   return (
     <div className="py-[3rem]">
       <div className="wrapper flex flex-col items-center gap-7">
-        <div className="gradient-rounded-text-box" data-aos="fade-up">
+        <div
+          className="gradient-rounded-text-box"
+          data-aos="fade-up"
+          data-aos-offset={-400}
+        >
           Testimonials
         </div>
         <h2
           className="heading-2 text-primarytextcolor mb-2 text-center"
+          data-aos-offset={-400}
           data-aos="fade-up"
         >
           Our Clients' Experiences
         </h2>
-        <div ref={sliderRef} className="keen-slider" data-aos="fade-up">
+        <div
+          ref={sliderRef}
+          className="keen-slider"
+          data-aos="fade-up"
+          data-aos-offset={-400}
+        >
           {reviews.map((item) => (
             <div
               key={item.id}
