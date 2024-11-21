@@ -16,14 +16,14 @@ const ServicePageLayout = () => {
       <WebsiteHeader />
       <ServiceDetailsBanner />
       <div className="wrapper">
-        <div className="py-[5rem] grid md:grid-cols-[30%_65%] gap-10">
+        <div className="py-[5rem] grid md:grid-cols-[30%_65%] grid-cols-1 gap-10">
           <div className="w-full flex flex-col gap-10">
             <div
               data-aos="fade-up"
               className="bg-[#ECF8FF] p-4 lg:p-6 rounded-lg"
             >
               <h4 className="text-2xl font-medium">All Services</h4>
-              <div className="mt-5 flex flex-wrap md:flex-col gap-3">
+              <div className="mt-5 flex flex-wrap md:flex-col flex-col gap-3">
                 {allServices.map((item) => (
                   <Link
                     key={item.title}
