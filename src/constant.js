@@ -107,33 +107,33 @@ export const routes = [
 export const faqs = [
   {
     id: 1,
-    question: "What is Web Development?",
+    question: "How do I get started?",
     answer:
-      "Web development refers to the process of creating websites and web applications. It includes tasks such as web design, web development, web programming, and database management.",
+      "Simply schedule a free consultation with us to discuss your idea. We will outline how we can help turn your vision into a successful AI company.",
   },
   {
     id: 2,
-    question: "What is Web Development?",
+    question: "Do I need technical knowledge to start an AI company?",
     answer:
-      "Web development refers to the process of creating websites and web applications. It includes tasks such as web design, web development, web programming, and database management.",
+      "No, you don’t need technical expertise. Our team of AI experts will handle the technical aspects while you focus on the business vision and strategy.",
   },
   {
     id: 3,
-    question: "What is Web Development?",
+    question: "How long does it take to launch an AI product?",
     answer:
-      "Web development refers to the process of creating websites and web applications. It includes tasks such as web design, web development, web programming, and database management.",
+      "The timeline varies, but typically it takes 3 to 6 months to develop a Minimum Viable Product (MVP) and begin the launch process.",
   },
   {
     id: 4,
-    question: "What is Web Development?",
+    question: "How do I know if my AI idea is feasible?",
     answer:
-      "Web development refers to the process of creating websites and web applications. It includes tasks such as web design, web development, web programming, and database management.",
+      "We offer an initial consultation to evaluate your idea’s feasibility, its market potential, and provide feedback on how to refine it for success.",
   },
   {
     id: 5,
-    question: "What is Web Development?",
+    question: "What kind of AI solutions do you offer?",
     answer:
-      "Web development refers to the process of creating websites and web applications. It includes tasks such as web design, web development, web programming, and database management.",
+      "We provide a wide range of AI solutions, including predictive analytics, natural language processing, computer vision, and custom AI model development tailored to your business needs.",
   },
 ];
 

@@ -20,17 +20,29 @@ import LandingServices from "../../componets/landingPages/LandingServices";
 import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
 import Testimonials from "../../componets/common/Testimonials";
 import Portfolio from "../../componets/landingPages/Portfolio";
-
+import ReactPlayer from "react-player";
+import landingpagevideo from "../../assets/videos/landingpagevideo.mp4";
+import Faqs from "../../componets/common/Faqs";
 export const LandingPage = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
   return (
     <>
       <div id="banner" className="h-screen relative">
-        <img
+        <ReactPlayer
+          url={landingpagevideo}
+          loop
+          muted
+          width="100vw"
+          height="100%"
+          playsinline
+          playing
+          className="react-player left-0 top-0 absolute object-cover h-full w-full"
+        />
+        {/* <img
           src={isWebDevelopment ? webDevBanner : appDevBanner}
           className="w-full h-full object-cover object-right absolute"
           alt=""
-        />
+        /> */}
         <div className="bg-gradient-to-r from-white/20 to-primary/20 absolute w-full h-full"></div>
         <div
           data-aos="fade-up"
@@ -45,7 +57,7 @@ export const LandingPage = ({ page }) => {
                 ? "Building Websites That Define Your Brand's Digital Presence"
                 : "Transforming Your Ideas into Engaging Mobile Experiences"}
             </h1>
-            <p className="text-primarytextcolor desc font-medium">
+            <p className="text-white desc font-medium">
               We specialize in crafting innovative IT solutions designed to meet
               the unique demands of today’s dynamic businesses.
             </p>
@@ -60,8 +72,65 @@ export const LandingPage = ({ page }) => {
           </div>
         </div>
       </div>
-      <Contact />
+      {/* <Contact /> */}
 
+      <div
+        data-aos="fade-up"
+        id="contacts"
+        className="py-[5rem] text-primarytextcolor bg-backgroundcolor"
+      >
+        <div className="wrapper">
+          <div className="h-full grid md:grid-cols-2 gap-10 py-5">
+            <div className="flex flex-col gap-4">
+              <h2 className="heading-2">Get In Touch With Us!</h2>
+              <p className="desc">
+                Get in touch with{" "}
+                <span className="font-semibold">VELANDIRCH TECHNOLOGIES</span>
+                and let us be the catalyst for your digital transformation.
+                Together, we can create solutions that align with your vision,
+                helping your business reach new heights.
+              </p>
+            </div>
+            <form className="flex flex-col gap-4 md:px-[1rem]">
+              <div className="">
+                <input
+                  required
+                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
+                  type="text"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div className="">
+                <input
+                  required
+                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
+                  type="text"
+                  placeholder="Mobile Number"
+                />
+              </div>
+              <div className="">
+                <input
+                  required
+                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
+                  type="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div className="">
+                <textarea
+                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
+                  rows="4"
+                  placeholder="Message"
+                  required
+                />
+              </div>
+              <button className="primary-btn" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
       <section
         id="about"
         className="py-[3rem] bg-backgroundcolor text-primarytextcolor wrapper"
@@ -228,65 +297,9 @@ export const LandingPage = ({ page }) => {
       <UnlockEfficiency />
       <Portfolio page={page} />
       <Testimonials />
+      <Faqs />
       {/* <EndlessOpportunitiesSection /> */}
-      {/* <Contact /> */}
-      <div
-        data-aos="fade-up"
-        id="contacts"
-        className="py-[5rem] text-primarytextcolor bg-backgroundcolor"
-      >
-        <div className="wrapper">
-          <div className="h-full grid md:grid-cols-2 gap-10 py-5">
-            <div className="flex flex-col gap-4">
-              <h2 className="heading-2">Get In Touch With Us!</h2>
-              <p className="desc">
-                Get in touch with{" "}
-                <span className="font-semibold">VELANDIRCH TECHNOLOGIES</span>
-                and let us be the catalyst for your digital transformation.
-                Together, we can create solutions that align with your vision,
-                helping your business reach new heights.
-              </p>
-            </div>
-            <form className="flex flex-col gap-4 md:px-[1rem]">
-              <div className="">
-                <input
-                  required
-                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                  type="text"
-                  placeholder="Full Name"
-                />
-              </div>
-              <div className="">
-                <input
-                  required
-                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                  type="text"
-                  placeholder="Mobile Number"
-                />
-              </div>
-              <div className="">
-                <input
-                  required
-                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                  type="email"
-                  placeholder="Email"
-                />
-              </div>
-              <div className="">
-                <textarea
-                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                  rows="4"
-                  placeholder="Message"
-                  required
-                />
-              </div>
-              <button className="primary-btn" type="submit">
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
+      <Contact />
     </>
   );
 };
