@@ -1,7 +1,7 @@
 import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import profileImg1 from "../../assets/images/profileimg-1.png";
-import profileImg2 from "../../assets/images/profileimg-2.png";
+import profileImg2 from "../../assets/images/profileimg-2.jpg";
 import {
   IoArrowBackCircleOutline,
   IoArrowForwardCircleOutline,
@@ -100,13 +100,13 @@ const Testimonials = () => {
               <p className="italic desc">{item.desc}</p>
               <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-2">
-                  <div className="h-[3rem] min-w-[3rem] bg-gray-300 rounded-full object-cover" />
+                  {/* <div className="h-[3rem] min-w-[3rem] bg-gray-300 rounded-full object-cover" /> */}
 
-                  {/* <img
-                    src={""}
+                  <img
+                    src={item.profileImg}
                     alt={item.name}
-                    className="h-full w-[3rem] rounded-full object-cover"
-                  /> */}
+                    className=" w-[3rem] h-[3rem] rounded-full object-cover"
+                  />
                   <div className="flex flex-col h-full">
                     <p className="font-medium">{item.name}</p>
                     <p className="text-sm">{item.role}</p>

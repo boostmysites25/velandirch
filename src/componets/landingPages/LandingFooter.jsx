@@ -11,7 +11,7 @@ const LandingFooter = () => {
         <div className="flex md:flex-row flex-col justify-between gap-10">
           <div className="flex flex-col items-center">
             <img src={logoImg} className="h-[6rem]" alt="" />
-            <p className="desc md:max-w-[15rem] text-sm text-center">
+            <p className="desc md:max-w-[15rem] text-sm text-center mt-5">
               We have rapidly grown into a trusted partner for organizations
               seeking digital transformation, enhanced operational efficiency.
             </p>
@@ -57,7 +57,10 @@ const LandingFooter = () => {
               <h6 className="font-medium mb-1">Contact Us</h6>
               <div className="flex flex-col">
                 <h6 className="text-[.9rem] mb-1">Phone</h6>
-                <Link className="text-primarytextcolor desc text-sm">
+                <Link
+                  to={`tel:${companyDetails.phone}`}
+                  className="text-primarytextcolor desc text-sm"
+                >
                   {companyDetails.phone}
                 </Link>
               </div>

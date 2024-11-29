@@ -39,21 +39,23 @@ const ServicePageLayout = () => {
                 ))}
               </div>
             </div>
-            <div
-              data-aos="fade-up"
-              className="text-center bg-gradient-to-b hidden md:flex flex-col items-center gap-3 text-white from-primary to-[#efb461b1] px-4 lg:px-6 py-10 rounded-lg"
-            >
-              <div className="w-[3.5rem] h-[3.5rem] bg-white text-primary rounded-full p-3 flex justify-center items-center">
-                <FaPhoneAlt className="text-3xl" />
-              </div>
-              <h4 className="text-2xl font-medium">Need Help? Call Here</h4>
-              <Link
-                to={`tel:${companyDetails.phone}`}
-                className="font-semibold"
+            <Link to={`tel:${companyDetails.phone}`} className="font-semibold">
+              <div
+                data-aos="fade-up"
+                className="text-center bg-gradient-to-b hidden md:flex flex-col items-center gap-3 text-white from-primary to-[#efb461b1] px-4 lg:px-6 py-10 rounded-lg"
               >
-                {companyDetails.phone}
-              </Link>
-            </div>
+                <div className="w-[3.5rem] h-[3.5rem] bg-white text-primary rounded-full p-3 flex justify-center items-center">
+                  <FaPhoneAlt className="text-3xl" />
+                </div>
+                <h4 className="text-2xl font-medium">Need Help? Call Here</h4>
+                <Link
+                  to={`tel:${companyDetails.phone}`}
+                  className="font-semibold"
+                >
+                  {companyDetails.phone}
+                </Link>
+              </div>
+            </Link>
             <div
               data-aos="fade-up"
               className="text-center bg-gradient-to-b from-primary to-[#efb461b1] hidden md:flex flex-col items-start gap-3 px-4 lg:px-6 py-10 rounded-lg"
@@ -103,18 +105,23 @@ const ServicePageLayout = () => {
               </Link>
             </div>
           </div>
-          <div
-            data-aos="fade-up"
-            className="text-center bg-gradient-to-b flex md:hidden flex-col items-center gap-3 text-white from-primary to-[#efb461b1] px-4 lg:px-6 py-10 rounded-lg"
-          >
-            <div className="w-[3.5rem] h-[3.5rem] bg-white text-primary rounded-full p-3 flex justify-center items-center">
-              <FaPhoneAlt className="text-3xl" />
+          <Link to={`tel:${companyDetails.phone}`} className="font-semibold">
+            <div
+              data-aos="fade-up"
+              className="text-center bg-gradient-to-b flex md:hidden flex-col items-center gap-3 text-white from-primary to-[#efb461b1] px-4 lg:px-6 py-10 rounded-lg"
+            >
+              <div className="w-[3.5rem] h-[3.5rem] bg-white text-primary rounded-full p-3 flex justify-center items-center">
+                <FaPhoneAlt className="text-3xl" />
+              </div>
+              <h4 className="text-xl font-semibold">Need Help? Call Here</h4>
+              <h4
+                // to={`tel:${companyDetails.phone}`}
+                className="font-semibold"
+              >
+                {companyDetails.phone}
+              </h4>
             </div>
-            <h4 className="text-xl font-semibold">Need Help? Call Here</h4>
-            <Link to={`tel:${companyDetails.phone}`} className="font-semibold">
-              {companyDetails.phone}
-            </Link>
-          </div>
+          </Link>
         </div>
       </div>
       <GetInTouch />

@@ -109,8 +109,9 @@ const WhyChooseUs = () => {
                   />
                 </div>
                 <p className="desc text-primarytextcolor text-start mt-3">
-                  A reputable IT company should possess a high level of
-                  technical expertise.
+                  A reputable IT company, VELANDIRCH TECHNOLOGIES specializes in
+                  crafting innovative, tailored solutions that align with your
+                  business goals.
                 </p>
               </div>
               <div
@@ -127,8 +128,9 @@ const WhyChooseUs = () => {
                   />
                 </div>
                 <p className="desc text-primarytextcolor text-start mt-3">
-                  A reputable IT company should possess a high level of
-                  technical expertise.
+                  A forward-thinking approach focused on embracing change and
+                  delivering creative, adaptable solutions to meet evolving
+                  business needs.
                 </p>
               </div>
             </div>
@@ -158,8 +160,8 @@ const WhyChooseUs = () => {
                   />
                 </div>
                 <p className="desc text-primarytextcolor text-start mt-3">
-                  A reputable IT company should possess a high level of
-                  technical expertise.
+                  Clear, transparent, and collaborative communication to ensure
+                  alignment and build strong relationships.
                 </p>
               </div>
               <div
@@ -176,8 +178,11 @@ const WhyChooseUs = () => {
                   />
                 </div>
                 <p className="desc text-primarytextcolor text-start mt-3">
-                  An IT company must prioritize cybersecurity and data
-                  protection.
+                  Ensuring robust security measures and adherence to industry
+                  standards to protect data, mitigate risks, and maintain
+                  compliance. We employ encryption, conduct regular audits, and
+                  stay updated with regulations to safeguard sensitive
+                  information.
                 </p>
               </div>
             </div>

@@ -1,6 +1,18 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+  };
   return (
     <div
       id="contact"
@@ -20,41 +32,77 @@ const Contact = () => {
             </p>
           </div>
           <form
-            // data-aos="fade-left"
+            onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col gap-4 md:px-[1rem]"
           >
             <div className="">
               <input
-                required
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 type="text"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 placeholder="Full Name"
+                {...register("fullName", { required: "Full name is required" })}
               />
+              {errors.fullName && (
+                <span className="text-red-500 text-sm">
+                  {errors.fullName.message}
+                </span>
+              )}
             </div>
+
             <div className="">
               <input
-                required
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 type="text"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 placeholder="Mobile Number"
+                {...register("mobileNumber", {
+                  required: "Mobile number is required",
+                  pattern: {
+                    value: /^[0-9]{10}$/,
+                    message: "Invalid phone number",
+                  },
+                })}
               />
+              {errors.mobileNumber && (
+                <span className="text-red-500 text-sm">
+                  {errors.mobileNumber.message}
+                </span>
+              )}
             </div>
+
             <div className="">
               <input
-                required
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 type="email"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 placeholder="Email"
+                {...register("email", {
+                  required: "Email is required",
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                    message: "Invalid email address",
+                  },
+                })}
               />
+              {errors.email && (
+                <span className="text-red-500 text-sm">
+                  {errors.email.message}
+                </span>
+              )}
             </div>
+
             <div className="">
               <textarea
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 rows="4"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 placeholder="Message"
-                required
+                {...register("message", { required: "Message is required" })}
               />
+              {errors.message && (
+                <span className="text-red-500 text-sm">
+                  {errors.message.message}
+                </span>
+              )}
             </div>
+
             <button className="primary-btn" type="submit">
               Submit
             </button>

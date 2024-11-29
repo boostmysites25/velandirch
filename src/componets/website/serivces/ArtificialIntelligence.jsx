@@ -3,6 +3,17 @@ import Testimonials from "../../common/Testimonials";
 
 const ArtificialIntelligence = () => {
   const details = allServices[1];
+  const splitIntoParagraphs = (text, numParagraphs = 3) => {
+    const sentences = text.split(". ").map((sentence) => sentence + ".");
+    const chunkSize = Math.ceil(sentences.length / numParagraphs);
+    const paragraphs = [];
+
+    for (let i = 0; i < sentences.length; i += chunkSize) {
+      paragraphs.push(sentences.slice(i, i + chunkSize).join(" "));
+    }
+
+    return paragraphs;
+  };
   return (
     <div className="flex flex-col gap-10">
       <img
@@ -20,12 +31,19 @@ const ArtificialIntelligence = () => {
 
         {/* Service Description */}
         <p data-aos="fade-up" className="description">
-          {details.detailContent}
+          {splitIntoParagraphs(details.detailContent).map(
+            (paragraph, index) => (
+              <p key={index} className="py-2">
+                {paragraph}
+              </p>
+            )
+          )}
+          {/* {details.detailContent} */}
         </p>
 
         {/* Points List */}
         <div data-aos="fade-up" className="pt-4">
-          <h3 className="text-xl font-semibold">{details.title}</h3>
+          {/* <h3 className="text-xl font-semibold">{details.title}</h3> */}
           {/* <ul className="w-full flex flex-wrap justify-between gap-3  sm:pl-6 mt-5">
             {details.points.list.map((item, index) => (
               <li

@@ -20,8 +20,8 @@ import aboutUsGridImg2 from "./assets/images/aboutus-png2.png";
 import aboutUsGridImg3 from "./assets/images/aboutus-png3.png";
 import aboutUsGridImg4 from "./assets/images/aboutus-png4.png";
 import aboutUsGridImg5 from "./assets/images/aboutus-png5.png";
-import profileImg1 from "./assets/images/profileimg-1.png";
-import profileImg2 from "./assets/images/profileimg-2.png";
+import profileImg1 from "./assets/images/profileimg-1.jpg";
+import profileImg2 from "./assets/images/profileimg-2.jpg";
 import serviceswebdevelopment from "./assets/images/services/serviceswebdevelopment.jpg";
 import serviceaidevelopment from "./assets/images/services/serviceaidevelopment.jpg";
 import chatbotdevelopment from "./assets/images/services/chatbotdevelopment.jpg";
@@ -73,8 +73,8 @@ export {
 
 // company details
 export const companyDetails = {
-  phone: "+91-9842149738",
-  whatsapp: "+91-9842149738",
+  phone: "+91-7904623740",
+  whatsapp: "+91-7904623740",
   email: "example@domainname.com",
   address:
     "101,Unit 101, Oxford Towers, 139, HAL Old Airport Rd, Kodihalli, Bengaluru, Karnataka 560008",
@@ -209,7 +209,7 @@ export const allServices = [
     title: "Mobile and Web Development",
     desc: "Build a strong digital presence with custom mobile apps and websites that are designed with your audience in mind. Our team creates sleek, responsive, and engaging digital solutions that reflect your brand and meet your goals.",
     detailContent:
-      "We design and build mobile apps and websites that elevate your brand’s digital presence. From sleek designs to smooth user experiences, our team develops solutions that not only look great but also engage and retain your audience. Whether it’s a user-friendly app or a responsive website, we’ve got you covered.",
+      "We design and build mobile apps and websites that elevate your brand’s digital presence. From sleek designs to smooth user experiences, our team develops solutions that not only look great but also engage and retain your audience. Whether it’s a user-friendly app or a responsive website, we’ve got you covered. We focus on scalability, performance optimization, and seamless integration with your existing systems. Our approach begins with a deep understanding of your goals and audience to create a product that aligns with your vision. Using modern frameworks and technologies, we ensure your app or website is future-ready, secure, and adaptable to evolving user needs. Our development process is transparent and collaborative, allowing you to stay involved at every stage. From concept and wireframing to design, coding, testing, and launch, we handle all aspects of development with a commitment to excellence. Additionally, we offer ongoing support and maintenance to keep your digital presence fresh, relevant, and optimized for performance. Our ultimate aim is to deliver solutions that not only meet your current needs but also provide a strong foundation for growth and success in the competitive digital landscape. With an emphasis on performance and aesthetics, we strive to deliver apps and websites that captivate users, foster engagement, and drive measurable results.",
   },
   {
     id: 2,
@@ -217,7 +217,7 @@ export const allServices = [
     title: "Artificial Intelligence Development",
     desc: "Stay future-ready with our advanced AI solutions. From predictive analytics to machine learning models, we help you make smarter decisions, streamline operations, and boost productivity through intelligent automation.",
     detailContent:
-      "Our AI services help you make smarter decisions and automate processes that boost productivity. From intelligent data analysis to custom machine learning algorithms, we build AI solutions that enhance efficiency and uncover new growth opportunities.",
+      "Our AI services help you make smarter decisions and automate processes that boost productivity. From intelligent data analysis to custom machine learning algorithms, we build AI solutions that enhance efficiency and uncover new growth opportunities. We specialize in natural language processing, image recognition, predictive modeling, and AI-driven automation. Our team focuses on understanding your unique challenges and tailoring solutions that drive meaningful results. With AI, you can identify patterns in large datasets, forecast trends, and personalize customer experiences like never before. Our solutions seamlessly integrate into your existing infrastructure, ensuring a smooth transition and minimal disruption to your operations. We use cutting-edge tools and technologies to build systems that are robust, secure, and scalable. Whether you are looking to implement chatbots, recommendation engines, fraud detection systems, or predictive analytics, our AI expertise ensures your business stays ahead of the curve. By integrating AI into your processes, we help you reduce costs, enhance customer satisfaction, and drive innovation in ways that were previously unimaginable. With a focus on transparency and collaboration, we ensure you understand and harness the full potential of AI for sustainable growth and competitive advantage. AI isn’t just about technology; it’s about reimagining the possibilities for your business.",
   },
   {
     id: 3,
@@ -225,7 +225,7 @@ export const allServices = [
     title: "Chatbot Development",
     desc: "Deliver efficient, around-the-clock customer service with custom-built chatbots that handle inquiries, support users, and enhance the customer journey. Our bots are tailored to align with your brand’s voice and offer a seamless user experience.",
     detailContent:
-      "Keep your customers engaged and supported with custom chatbots that streamline communication. Our chatbots are designed to answer common questions, improve customer satisfaction, and provide real-time assistance 24/7, enhancing your service without added effort.",
+      "Keep your customers engaged and supported with custom chatbots that streamline communication. Our chatbots are designed to answer common questions, improve customer satisfaction, and provide real-time assistance 24/7, enhancing your service without added effort. From rule-based bots to advanced AI-driven conversational agents, we ensure your chatbot is equipped to handle diverse scenarios. Our development process involves understanding your business needs and crafting a chatbot that aligns with your brand’s tone and personality. We incorporate natural language processing (NLP) to make interactions more human-like and intuitive. Our chatbots are capable of integrating with various platforms, including websites, social media, and messaging apps, to provide a seamless user experience. We also focus on scalability, ensuring your chatbot can handle increasing traffic as your business grows. Our post-launch support includes monitoring and updates to keep your chatbot performing optimally. By reducing response times and improving user engagement, our chatbot solutions not only enhance customer satisfaction but also free up your team to focus on more complex tasks, ultimately driving efficiency and value for your organization. Chatbots aren’t just a trend; they’re a powerful tool for modern customer service and engagement.",
   },
   {
     id: 4,
@@ -233,7 +233,7 @@ export const allServices = [
     title: "Data Analytics and Business Intelligence",
     desc: "Unlock actionable insights with data-driven intelligence. Our data analytics solutions provide a clearer picture of your business performance, helping you make informed, strategic decisions that fuel growth.",
     detailContent:
-      "We turn data into insights that drive results. Our data analytics and BI services empower you to make informed, data-driven decisions. We help you visualize key metrics, understand trends, and gain actionable intelligence that aligns with your business strategy.",
+      "We turn data into insights that drive results. Our data analytics and BI services empower you to make informed, data-driven decisions. We help you visualize key metrics, understand trends, and gain actionable intelligence that aligns with your business strategy. Using cutting-edge tools and methodologies, we identify patterns, detect anomalies, and provide recommendations for optimizing performance. Our solutions are tailored to meet your unique business needs, ensuring you gain a competitive edge in your industry. From real-time dashboards to predictive analytics, we help you stay ahead of market trends and customer demands. By integrating advanced data processing technologies, we enable you to harness the full potential of your data while ensuring security and compliance. Whether you’re looking to improve operational efficiency, enhance customer experiences, or explore new growth opportunities, our data analytics services provide the clarity and confidence you need to take your business to the next level. Our expertise also extends to cloud-based analytics platforms, enabling you to access insights anytime, anywhere. By making sense of complex data, we help businesses transform challenges into opportunities for growth and innovation.",
   },
   {
     id: 5,
@@ -241,39 +241,39 @@ export const allServices = [
     title: "Game Development",
     desc: "Bring your gaming ideas to life with immersive experiences that captivate players. From concept to final launch, we handle every step to create high-quality games that resonate with audiences across platforms.",
     detailContent:
-      "Our game development team transforms ideas into engaging experiences that captivate players. From character design to immersive storylines and detailed gameplay mechanics, we bring each element to life, creating games that resonate with audiences across platforms.",
+      "Our game development team transforms ideas into engaging experiences that captivate players. From character design to immersive storylines and detailed gameplay mechanics, we bring each element to life, creating games that resonate with audiences across platforms. We specialize in mobile, console, and PC game development, ensuring each product is optimized for performance and player satisfaction. Our end-to-end services include concept design, prototyping, testing, and post-launch support, ensuring your game exceeds expectations at every stage. We use advanced technologies and frameworks to deliver high-quality graphics, smooth performance, and engaging gameplay. Our team focuses on understanding your vision and audience, tailoring each game to meet your goals. Whether it’s a casual mobile game or an expansive multiplayer experience, we bring creativity and technical expertise to every project. We also provide marketing support and monetization strategies to maximize your game’s reach and profitability. With a commitment to innovation and quality, we help turn your ideas into games that inspire and entertain players worldwide. Let us take your gaming vision to the next level with our comprehensive development solutions.",
   },
   {
     id: 6,
     link: "/services/blockchain-development",
     title: "Blockchain Development",
-    desc: "Embrace the security and transparency of blockchain. Our blockchain solutions include secure transaction systems and decentralized applications that bring reliability and efficiency to your operations.",
+    desc: "Leverage the power of blockchain to build secure, transparent, and decentralized systems. From cryptocurrency solutions to smart contracts, we deliver innovative blockchain applications tailored to your business.",
     detailContent:
-      "Explore secure, transparent, and decentralized technology with our blockchain services. Whether you’re interested in secure transaction systems, digital contracts, or custom blockchain applications, we help you implement solutions that foster trust and reliability.",
+      "Blockchain technology is revolutionizing industries, and we’re here to help you harness its potential. Our blockchain development services empower your business with secure, transparent, and decentralized systems that drive trust and efficiency. Whether you need a cryptocurrency solution, a smart contract platform, or a decentralized app (dApp), we provide end-to-end blockchain development tailored to your goals. We specialize in various blockchain frameworks, including Ethereum, Hyperledger, and Binance Smart Chain, ensuring the right solution for your needs. Our process begins with understanding your requirements and designing a system architecture that aligns with your business objectives. We then implement scalable, secure, and efficient solutions with a strong emphasis on performance and reliability. From digital wallets and token development to supply chain solutions and DeFi platforms, we cover a wide range of blockchain use cases. Our team ensures seamless integration of blockchain technology with your existing systems, minimizing disruption while maximizing value. We also offer post-launch support to ensure your solution remains up-to-date with the latest advancements in blockchain technology. By choosing us, you’re investing in innovation, security, and a future-proof strategy that positions your business at the forefront of technological progress.",
   },
   {
     id: 7,
     link: "/services/machine-learning",
-    title: "Machine Learning Services",
-    desc: "Harness the transformative power of AI and machine learning with our advanced solutions. We develop intelligent systems that automate processes.",
+    title: "Machine Learning",
+    desc: "Turn your data into actionable intelligence with custom machine learning models. From predictive analytics to recommendation engines, we build solutions that learn and adapt to drive meaningful outcomes.",
     detailContent:
-      "Unlock the potential of your data with custom machine learning models that identify trends, automate decision-making, and enhance customer experiences. Our solutions are tailored to your specific needs, helping you stay competitive with advanced, data-driven insights.",
+      "Machine learning (ML) is a transformative technology that enables businesses to derive actionable insights and make smarter decisions. Our ML solutions are tailored to your unique needs, helping you unlock the potential of your data. We specialize in building custom algorithms for predictive analytics, recommendation engines, anomaly detection, and more. Our team uses advanced ML frameworks and tools like TensorFlow, PyTorch, and Scikit-learn to create models that learn and adapt as they process more data. Whether it’s analyzing customer behavior, optimizing supply chains, or automating complex processes, our ML solutions drive efficiency and innovation. We start by understanding your business challenges and defining clear objectives for the ML project. Our team then cleanses and preprocesses your data, develops tailored models, and integrates the solution seamlessly into your existing workflows. Post-deployment, we continuously monitor and refine the models to ensure optimal performance as your business evolves. With a focus on transparency, security, and scalability, our ML services empower your business to stay ahead in an increasingly data-driven world.",
   },
   {
     id: 8,
     link: "/services/cloud-computing",
-    title: "Cloud Computing Services",
-    desc: "Achieve greater flexibility and efficiency with our cloud computing solutions. We manage every phase of cloud migration, management, and optimization, ensuring your systems are secure, scalable, and future-ready.",
+    title: "Cloud Computing",
+    desc: "Transform your business operations with scalable, flexible, and secure cloud solutions. From cloud migration to custom SaaS applications, we help you leverage the power of the cloud for efficiency and innovation.",
     detailContent:
-      "Gain flexibility, scalability, and cost-effectiveness with cloud solutions that fit your business. We handle everything from cloud migration to ongoing management, allowing your team to work more efficiently and access data from anywhere, securely and seamlessly.",
+      "Cloud computing offers unmatched flexibility, scalability, and cost-efficiency, and we help you leverage these benefits to transform your business operations. Our cloud computing services include cloud migration, custom SaaS application development, and infrastructure optimization, enabling your business to operate with greater agility and security. We work with major cloud platforms such as AWS, Microsoft Azure, and Google Cloud, ensuring the right fit for your needs. Whether you’re looking to migrate legacy systems, build cloud-native applications, or optimize your existing cloud infrastructure, we provide end-to-end support. Our experts assess your requirements, design a tailored cloud architecture, and implement solutions that align with your goals. With an emphasis on security and compliance, we ensure your data and operations remain protected. We also focus on cost optimization, helping you reduce expenses while maximizing performance. Post-deployment, we provide ongoing support and monitoring to ensure your cloud systems operate seamlessly. By adopting cloud computing, you not only enhance operational efficiency but also unlock opportunities for innovation and growth in a competitive digital landscape.",
   },
   {
     id: 9,
-    link: "/services/RPA",
+    link: "/services/rpa",
     title: "Robotic Process Automation (RPA)",
-    desc: "Streamline workflows with RPA solutions that automate repetitive tasks, freeing your team to focus on high-value work. Our RPA services enhance accuracy and speed, boosting your organization’s overall efficiency.",
+    desc: "Streamline repetitive tasks with RPA solutions that increase efficiency, reduce errors, and free up your team for strategic initiatives. Automate workflows and processes to enhance productivity across your organization.",
     detailContent:
-      "Automate repetitive tasks and streamline workflows with RPA. Our solutions reduce manual workload, enhance accuracy, and give your team more time to focus on high-value activities. From finance to customer service, RPA can transform how you operate.",
+      "Robotic Process Automation (RPA) is revolutionizing how businesses handle repetitive tasks by automating workflows to enhance efficiency and accuracy. Our RPA solutions free up your team to focus on higher-value tasks, allowing your organization to achieve greater productivity and operational excellence. We specialize in designing, developing, and deploying RPA solutions tailored to your unique business processes. Using advanced tools like UiPath, Automation Anywhere, and Blue Prism, we create bots that can handle tasks such as data entry, invoice processing, customer support, and more. Our process begins with identifying areas where automation can deliver the most value. We then design RPA workflows that integrate seamlessly with your existing systems and applications, ensuring minimal disruption. Our bots are programmed to operate with precision, consistency, and speed, reducing errors and operational costs. We also provide ongoing support to monitor and refine the automation, ensuring it continues to deliver optimal results as your business evolves. By adopting RPA, your business can achieve faster turnaround times, improved accuracy, and cost savings, all while maintaining high levels of service quality. RPA is not just a tool; it’s a strategy for transforming the way you work and unlocking new levels of efficiency and growth.",
   },
 ];
 
@@ -304,14 +304,14 @@ export const whyChooseUsContent = [
 export const reviews = [
   {
     id: 1,
-    profileImg: profileImg1,
+    profileImg: profileImg2,
     name: "Mark S.",
     role: "Founder of UrbanTrends",
     desc: "“Partnering with VELANDIRCH TECHNOLOGIES was a breath of fresh air. They not only brought our mobile app and website ideas to life but also helped us think through user experience details that made a huge impact. They truly understood our vision and delivered a solution that has taken our online presence to the next level.”",
   },
   {
     id: 2,
-    profileImg: profileImg2,
+    profileImg: profileImg1,
     name: "Lisa T.",
     role: "Operations Manager at HealthPro Analytics",
     desc: "“The AI solutions from VELANDIRCH TECHNOLOGIES have completely transformed our operations. Their team helped us automate data processes, which has freed up our team for higher-level tasks. The insights and predictive analytics they’ve provided have given us a competitive edge we didn’t think was possible.”",
@@ -325,7 +325,7 @@ export const reviews = [
   },
   {
     id: 4,
-    profileImg: profileImg2,
+    profileImg: profileImg1,
     name: "Samantha K.",
     role: "CEO at Retail Innovations",
     desc: "“Working with VELANDIRCH TECHNOLOGIES on our data analytics strategy was one of our best investments. Their team transformed our raw data into meaningful insights that have guided our recent business decisions. We’ve already seen measurable results, and we’re excited to keep building on this foundation.”",
@@ -339,7 +339,7 @@ export const reviews = [
   },
   {
     id: 6,
-    profileImg: profileImg2,
+    profileImg: profileImg1,
     name: "Monica B.",
     role: "CTO at FinSecure",
     desc: "“We were initially overwhelmed by the complexity of blockchain, but VELANDIRCH TECHNOLOGIES made it easy to understand and implement. Their team developed a secure blockchain solution tailored to our needs, and it’s given us and our clients peace of mind in every transaction.”",
@@ -353,7 +353,7 @@ export const reviews = [
   },
   {
     id: 8,
-    profileImg: profileImg2,
+    profileImg: profileImg1,
     name: "Claire J.",
     role: "IT Director at GlobalTech Solutions",
     desc: "“The cloud migration and management services we received from VELANDIRCH TECHNOLOGIES have been invaluable. They took us from a traditional setup to a flexible cloud environment, allowing us to scale easily. It’s been a huge boost for our team’s productivity.”",
