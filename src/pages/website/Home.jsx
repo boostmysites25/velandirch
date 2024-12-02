@@ -10,6 +10,8 @@ import EndlessOpportunitiesSection from "../../componets/common/EndlessOpportuni
 import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
 import Testimonials from "../../componets/common/Testimonials";
 import Faqs from "../../componets/common/Faqs";
+import Credibility from "../../componets/common/Credibility";
+import CommonProject from "../../componets/website/CommonProject";
 
 const Home = () => {
   return (
@@ -122,11 +124,12 @@ const Home = () => {
           </p>
         </div>
       </section>
-
+      <CommonProject />
       {/* <Faqs /> */}
       <WhyChooseUs />
       <UnlockEfficiency />
       <Testimonials />
+      <Credibility />
       <Faqs />
       {/* <EndlessOpportunitiesSection /> */}
       <div>

@@ -10,7 +10,7 @@ const WebsiteFooter = () => {
         <div className="flex md:flex-row flex-col justify-between gap-10">
           <div className="flex flex-col items-center">
             <img src={logoImg} className="h-[6rem]" alt="" />
-            <p className="desc md:max-w-[15rem] text-sm text-center">
+            <p className="desc md:max-w-[15rem] text-sm text-center mt-5">
               We have rapidly grown into a trusted partner for organizations
               seeking digital transformation, enhanced operational efficiency.
             </p>

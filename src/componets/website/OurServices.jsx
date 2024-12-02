@@ -129,7 +129,7 @@ const OurServices = ({ length }) => {
                 </div>
                 <button
                   onClick={() => handleSelectServiceToShowDetail(service)}
-                  className="desc mt-1 flex items-center gap-3 hover:text-primary transition-all duration-300"
+                  className="font-inter mt-1 flex items-center gap-3 hover:text-primary transition-all duration-300 underline underline-offset-4"
                 >
                   Learn More <PiCaretDoubleRightBold />
                 </button>

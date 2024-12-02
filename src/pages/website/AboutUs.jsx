@@ -11,6 +11,8 @@ import {
 import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
 import OurServices from "../../componets/website/OurServices";
 import Testimonials from "../../componets/common/Testimonials";
+import { Link } from "react-router-dom";
+import { IoIosArrowForward } from "react-icons/io";
 
 const AboutUs = () => {
   return (
@@ -24,9 +26,32 @@ const AboutUs = () => {
           className="object-cover object-[100%_35%] h-full w-full"
           alt=""
         />
-        <h2 className="font-raleway text-[2.18rem] md:text-7xl font-bold leading-tight text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[10%] text-center">
+        <div className="absolute top-0 w-full h-full bg-black/20"></div>
+
+        {/* <h2 className="font-raleway text-[2.18rem] md:text-7xl font-bold leading-tight text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[10%] text-center">
           About Us
-        </h2>
+        </h2> */}
+        <div className="absolute py-2  top-[40%] left-1/2 -translate-x-1/2 w-full flex flex-col items-center px-3">
+          <h1
+            data-aos="fade-up"
+            className="heading text-white text-center font-raleway text-[2.18rem] md:text-7xl font-bold leading-tight"
+          >
+            About Us
+          </h1>
+          {/* <h2 className="font-raleway text-[2.18rem] md:text-7xl font-bold leading-tight text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[10%] text-center">
+          {page}
+        </h2> */}
+          <div
+            data-aos="fade-up"
+            className="mt-5 text-base sm:text-xl font-medium px-3 py-2 w-fit rounded-full  flex flex-wrap justify-center text-white items-center gap-1 sm:gap-2"
+          >
+            <Link to="/">Home</Link>
+            <IoIosArrowForward />
+            <h4>About us</h4>
+            {/* <IoIosArrowForward /> */}
+            {/* <p>{title}</p> */}
+          </div>
+        </div>
       </div>
       <div className="py-[5rem] text-primarytextcolor text-center">
         <div className="wrapper flex flex-col items-center gap-5 mb-[5rem]">

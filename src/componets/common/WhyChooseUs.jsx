@@ -101,7 +101,7 @@ const WhyChooseUs = () => {
                 className="p-5 border border-primary rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
-                  <h5 className="text-xl">Technical Expertise</h5>
+                  <h5 className="text-xl font-semibold">Technical Expertise</h5>
                   <img
                     src={whyChooseUsIcon1}
                     className="h-[3rem] object-contain mb-3"
@@ -120,7 +120,9 @@ const WhyChooseUs = () => {
                 className="p-5 border border-primary rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
-                  <h5 className="text-xl">Innovation & Adaptability</h5>
+                  <h5 className="text-xl font-semibold">
+                    Innovation & Adaptability
+                  </h5>
                   <img
                     src={whyChooseUsIcon2}
                     className="h-[3rem] object-contain mb-3"
@@ -152,7 +154,9 @@ const WhyChooseUs = () => {
                 className="p-5 border border-primary rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
-                  <h5 className="text-xl">Effective Communication</h5>
+                  <h5 className="text-xl font-semibold">
+                    Effective Communication
+                  </h5>
                   <img
                     src={whyChooseUsIcon3}
                     className="h-[3rem] object-contain mb-3"
@@ -170,7 +174,9 @@ const WhyChooseUs = () => {
                 className="p-5 border border-primary rounded-xl w-full h-full"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
-                  <h5 className="text-xl">Security and Compliance</h5>
+                  <h5 className="text-xl font-semibold">
+                    Security and Compliance
+                  </h5>
                   <img
                     src={whyChooseUsIcon4}
                     className="h-[3rem] object-contain mb-3"

@@ -22,6 +22,7 @@ import BlockchainDevelopment from "./componets/website/serivces/BlockchainDevelo
 import MachineLearning from "./componets/website/serivces/MachineLearning.jsx";
 import CloudComputing from "./componets/website/serivces/CloudComputing.jsx";
 import RPA from "./componets/website/serivces/RPA.jsx";
+import WhatsAppIcon from "./componets/common/Whatsapp.jsx";
 
 AOS.init({
   once: true,
@@ -34,6 +35,7 @@ export default function App() {
     <SpinnerContextProvider>
       <LoadingSpinnerContext />
       <Suspense fallback={<LoadingSpinner />}>
+        <WhatsAppIcon />
         <ScrollToTop />
         <Routes>
           {/* Website Pages */}

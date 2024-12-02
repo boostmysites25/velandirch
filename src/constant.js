@@ -14,7 +14,8 @@ import endlessOpportunitiesImg2 from "./assets/images/section-8-img-2.png";
 import endlessOpportunitiesImg3 from "./assets/images/section-8-img-3.png";
 import homeBannerVideo from "./assets/videos/home-banner.mp4";
 import defaultBanner from "./assets/images/banner.jpg";
-import aboutUsBanner from "./assets/images/about-us-banner.webp";
+import aboutUsBanner from "./assets/images/about-us-banner.jpg";
+import contactusbanner from "./assets/images/contactusbanner.jpg";
 import aboutUsGridImg1 from "./assets/images/aboutus-png1.png";
 import aboutUsGridImg2 from "./assets/images/aboutus-png2.png";
 import aboutUsGridImg3 from "./assets/images/aboutus-png3.png";
@@ -69,12 +70,14 @@ export {
   machinelearning,
   clouddevelopment,
   rpa,
+  contactusbanner,
 };
 
 // company details
 export const companyDetails = {
   phone: "+91-7904623740",
   whatsapp: "+91-7904623740",
+  whatsappbox: "7904623740",
   email: "example@domainname.com",
   address:
     "101,Unit 101, Oxford Towers, 139, HAL Old Airport Rd, Kodihalli, Bengaluru, Karnataka 560008",
@@ -401,6 +404,51 @@ export const webPortfolio = [
   },
 ];
 
+export const webPortfolioHomepage = [
+  {
+    id: 1,
+    img: require("./assets/images/web_projects/1.webp"),
+    title: "FE-Finance",
+    description:
+      "A comprehensive finance platform streamlining investments and portfolio management efficiently.",
+  },
+  {
+    id: 2,
+    img: require("./assets/images/web_projects/2.webp"),
+    title: "Ocxee",
+    description:
+      "A global relocation service platform for seamless student mobility and accommodations.",
+  },
+  {
+    id: 3,
+    img: require("./assets/images/web_projects/3.webp"),
+    title: "Leaderbridge",
+    description:
+      "A networking platform connecting leaders and professionals to foster meaningful collaborations.",
+  },
+  {
+    id: 4,
+    img: require("./assets/images/web_projects/4.webp"),
+    title: "Gigzio",
+    description:
+      "An innovative job marketplace connecting freelancers and employers for diverse gig opportunities.",
+  },
+  {
+    id: 5,
+    img: require("./assets/images/web_projects/5.webp"),
+    title: "FE Group",
+    description:
+      "A corporate solution provider enhancing business growth with tailored financial services.",
+  },
+  {
+    id: 6,
+    img: require("./assets/images/web_projects/6.webp"),
+    title: "V Talkz",
+    description:
+      "A dynamic communication platform revolutionizing team collaboration and connectivity.",
+  },
+];
+
 // portfolio images (app development)
 export const appPortfolio = [
   {
@@ -427,5 +475,43 @@ export const appPortfolio = [
     id: 5,
     img: require("./assets/images/app_projects/5.webp"),
     title: "House of Deliverance",
+  },
+];
+
+export const appPortfolioHomepage = [
+  {
+    id: 1,
+    img: require("./assets/images/app_projects/1.webp"),
+    title: "PartEx",
+    description:
+      "An intuitive platform simplifying vehicle part exchanges and purchases.",
+  },
+  {
+    id: 2,
+    img: require("./assets/images/app_projects/2.webp"),
+    title: "Find A Driver",
+    description:
+      "A driver-matching app ensuring efficient and reliable transportation services.",
+  },
+  {
+    id: 3,
+    img: require("./assets/images/app_projects/3.webp"),
+    title: "Glowsy",
+    description:
+      "A beauty and wellness app offering personalized skincare and grooming solutions.",
+  },
+  {
+    id: 4,
+    img: require("./assets/images/app_projects/4.webp"),
+    title: "Artisan Express",
+    description:
+      "A platform connecting users with skilled artisans for home services.",
+  },
+  {
+    id: 5,
+    img: require("./assets/images/app_projects/5.webp"),
+    title: "House of Deliverance",
+    description:
+      "A spiritual app offering resources for faith-building and inspiration.",
   },
 ];
