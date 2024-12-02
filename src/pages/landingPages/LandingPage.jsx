@@ -24,6 +24,7 @@ import ReactPlayer from "react-player";
 import landingpagevideo from "../../assets/videos/landingpagevideo.mp4";
 import Faqs from "../../componets/common/Faqs";
 import { useForm } from "react-hook-form";
+import Credibility from "../../componets/common/Credibility";
 export const LandingPage = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
   const {
@@ -350,6 +351,7 @@ export const LandingPage = ({ page }) => {
       <UnlockEfficiency />
       <Portfolio page={page} />
       <Testimonials />
+      <Credibility />
       <Faqs />
       {/* <EndlessOpportunitiesSection /> */}
       <Contact />

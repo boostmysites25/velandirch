@@ -12,7 +12,7 @@ const CommonProject = () => {
           <h3 className="heading-2 text-center my-8">Web Projects</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7">
             {webPortfolioHomepage.map((obj) => (
-              <div key={obj.id}>
+              <div key={obj.id} data-aos="fade-up">
                 <img
                   src={obj.img}
                   alt={obj.title}
@@ -29,7 +29,7 @@ const CommonProject = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7">
             {appPortfolioHomepage.map((obj) => (
-              <div key={obj.id} className="">
+              <div key={obj.id} className="" data-aos="fade-up">
                 <img
                   src={obj.img}
                   alt={obj.title}
