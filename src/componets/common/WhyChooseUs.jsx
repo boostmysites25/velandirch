@@ -71,17 +71,18 @@ const WhyChooseUs = () => {
         </div>
         <div className="flex flex-col gap-5">
           <h2 data-aos-offset={-200} data-aos="fade-up" className="heading-2">
-            The Driving Force Behind Our IT Solutions
+            The Driving Force Behind Our AI-Powered IT Solutions
           </h2>
           <p
             data-aos-offset={-200}
             data-aos="fade-up"
             className="desc max-w-[40rem] mx-auto"
           >
-            At VELANDIRCH AI, we’re dedicated to delivering solutions that are
-            custom-fit to your business. Our team is passionate about innovation
-            and works alongside you to understand your vision, transforming it
-            into a digital reality that exceeds expectations.
+            At VELANDIRCH AI, we’re dedicated to delivering AI-powered solutions
+            that are custom-fit to your business needs. Our team is passionate
+            about innovation and collaborates closely with you to understand
+            your vision, transforming it into a digital reality that not only
+            meets but exceeds expectations, driving growth and success.
           </p>
           {/* <div
             data-aos-offset={-400}

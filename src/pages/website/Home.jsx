@@ -41,9 +41,10 @@ const Home = () => {
               Transformative Digital Solutions
             </h1>
             <p className="desc">
-              At VELANDIRCH AI, we craft cutting-edge IT solutions tailored to
-              meet the evolving needs of businesses, ensuring efficiency,
-              growth, and innovation.
+              At VELANDIRCH AI, we craft cutting-edge AI-driven IT solutions
+              tailored to meet the evolving needs of businesses, ensuring
+              enhanced efficiency, sustainable growth, and continuous innovation
+              through intelligent automation and data-driven insights.
             </p>
             <Link to="/contact-us" className="primary-btn mt-2">
               Get Started
@@ -63,7 +64,7 @@ const Home = () => {
           <div data-aos="fade-right" className="flex h-full flex-col gap-7">
             <div className="flex flex-col gap-7 text-center lg:text-start">
               <h2 className="heading-2">
-                Enhancing Operations with Advanced Technology.
+                Enhancing Operations with Advanced AI Technology
               </h2>
               <p className="desc">
                 Welcome to VELANDIRCH AI —where technology meets innovation to
@@ -113,18 +114,19 @@ const Home = () => {
             Who We Are
           </div>
           <h1 className="heading-2 bg-gradient-to-r from-[#7186FF] max-w-[50rem] mx-auto to-primary bg-clip-text text-transparent">
-            Dependable IT Support Tailored for Your Business
+            Dependable AI-Powered IT Support Tailored for Your Business{" "}
           </h1>
           <p className="desc max-w-[50rem] mx-auto">
-            At VELANDIRCH AI, we recognize that your website is more than just
+            At VELANDIRCH AI, we understand that your website is more than just
             an online presence—it's the cornerstone of your brand, a powerful
-            business tool, and often the first interaction with potential
-            customers. In a world where first impressions are critical, having a
-            well-designed, fast, and responsive website is essential for
-            business success. Our website development services go beyond the
-            basics to deliver a complete digital experience that enhances
-            engagement, drives conversions, and accelerates your business
-            growth.
+            business tool, and often the first point of interaction with
+            potential customers. In today’s fast-paced world, first impressions
+            matter, and having a website that is not only well-designed but also
+            powered by advanced AI-driven features is crucial for success. Our
+            website development services go beyond the basics, incorporating
+            AI-powered optimization for performance, personalized user
+            experiences, and data-driven insights to drive engagement, increase
+            conversions, and accelerate your business growth.
           </p>
         </div>
       </section>

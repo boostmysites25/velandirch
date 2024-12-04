@@ -10,11 +10,12 @@ const UnlockEfficiency = () => {
         className="wrapper flex flex-col text-primarytextcolor items-center gap-5 text-center"
       >
         <div className="gradient-rounded-text-box">Unlock Efficiency</div>
-        <h2 className="heading-2">Ready to Elevate Your Business?</h2>
+        <h2 className="heading-2">Ready to Elevate Your Business with AI?</h2>
         <p className="desc max-w-[40rem] text-center">
-          Our mission is to provide solutions that grow with you. Discover how
-          our services can empower your business to achieve new heights—let’s
-          connect and start building the future together!
+          Our mission is to provide AI-driven solutions that grow with you.
+          Discover how our innovative services can empower your business to
+          reach new heights—let’s connect and start building a smarter, more
+          successful future together!
         </p>
         <Link to="/contact-us" className="primary-btn mt-3">
           Contact Us
