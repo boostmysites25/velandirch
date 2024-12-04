@@ -115,12 +115,12 @@ const CommonProject = () => {
             {webPortfolioHomepage.map((obj) => (
               <div
                 key={obj.id}
-                className="keen-slider__slide border rounded-xl bg-custom-gradient"
+                className="keen-slider__slide border rounded-xl bg-custom-gradient object-cover"
               >
                 <img
                   src={obj.img}
                   alt={obj.title}
-                  className="rounded-t-xl hover:scale-105 transition-all duration-300"
+                  className="rounded-t-xl hover:scale-105 transition-all duration-300 lg:max-h-[316px] w-full  2xl:max-h-[467px] object-cover"
                 />
                 <div className="px-3 mt-3 pb-5">
                   <h4 className="font-semibold text-xl text-center">
@@ -143,7 +143,7 @@ const CommonProject = () => {
                 <img
                   src={obj.img}
                   alt={obj.title}
-                  className="rounded-t-xl hover:scale-105 transition-all duration-300 max-h-[317px] object-cover w-full"
+                  className="rounded-t-xl hover:scale-105 transition-all duration-300 lg:max-h-[316px]  2xl:max-h-[467px] object-cover w-full"
                 />
                 <div className="px-3 mt-3 pb-5">
                   <h4 className="font-semibold text-xl">{obj.title}</h4>

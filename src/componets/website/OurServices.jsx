@@ -25,14 +25,20 @@ const OurServices = ({ length }) => {
       loop: true,
       slides: {
         perView: 3,
-        spacing: 20,
+        spacing: 1,
       },
       mode: "free",
       breakpoints: {
         "(max-width: 1024px)": {
           slides: {
-            perView: 1,
-            spacing: 20,
+            perView: 2, // Show 2 slides for screens below lg
+            spacing: 10, // Adjust spacing for better layout
+          },
+        },
+        "(max-width: 768px)": {
+          slides: {
+            perView: 1, // Show 1 slide for screens below md
+            spacing: 5, // Adjust spacing for compact layout
           },
         },
       },
@@ -112,33 +118,37 @@ const OurServices = ({ length }) => {
         <div
           data-aos="fade-up"
           ref={sliderRefone}
-          className="keen-slider grid sm:grid-cols-2 md:grid-cols-3  mt-3"
+          className="keen-slider grid sm:grid-cols-2 md:grid-cols-3 h-[480px] sm:h-[400px]  mt-3"
         >
           {services.map((service) => (
-            <Link
-              onClick={() => handleSelectServiceToShowDetail(service)}
-              // data-aos="fade-up"
-              to={service.link}
-              key={service.id}
-              className="keen-slider__slide rounded-lg p-[1px]  cursor-pointer"
-            >
-              <div className="  group rounded-lg bg-backgro-gradient p-[1px] transition-all h-full duration-500">
-                <div className="rounded-lg bg-backgroundcolor hover:bg-custom-gradient p-5 flex flex-col justify-between items-start text-start h-full gap-4">
-                  <div className="flex flex-col gap-3">
-                    <h5 className="font-semibold text-xl font-raleway">
-                      {service.title}
-                    </h5>
-                    <p className="desc text-primarytextcolor">{service.desc}</p>
+            <div className="keen-slider__slide  p-4">
+              <Link
+                onClick={() => handleSelectServiceToShowDetail(service)}
+                // data-aos="fade-up"
+                to={service.link}
+                key={service.id}
+                className=" rounded-lg p-[1px]  cursor-pointer"
+              >
+                <div className="group hover:scale-105  group rounded-lg bg-backgro-gradient p-[1px] transition-all  duration-500">
+                  <div className="rounded-lg bg-backgroundcolor hover:bg-custom-gradient p-5 flex flex-col justify-between items-start text-start h-[410px] sm:h-[300px] gap-4">
+                    <div className="flex flex-col gap-3">
+                      <h5 className="font-semibold group-hover:text-primary text-xl font-raleway">
+                        {service.title}
+                      </h5>
+                      <p className="desc text-primarytextcolor">
+                        {service.desc}
+                      </p>
+                    </div>
+                    <button
+                      onClick={() => handleSelectServiceToShowDetail(service)}
+                      className="font-inter mt-1 flex items-center gap-3 group-hover:text-primary   transition-all duration-300 underline underline-offset-4"
+                    >
+                      Learn More <PiCaretDoubleRightBold />
+                    </button>
                   </div>
-                  <button
-                    onClick={() => handleSelectServiceToShowDetail(service)}
-                    className="font-inter mt-1 flex items-center gap-3 hover:text-primary transition-all duration-300 underline underline-offset-4"
-                  >
-                    Learn More <PiCaretDoubleRightBold />
-                  </button>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           ))}
         </div>
         <div
