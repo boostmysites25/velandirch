@@ -56,7 +56,7 @@ const LandingHeader = () => {
     <div
       className={`py-4 fixed top-0 w-full   z-50  ${
         isScrolled
-          ? "bg-black/10 bg-opacity-60 backdrop-blur-md"
+          ? "bg-black/10 bg-opacity-60 backdrop-blur-md text-white"
           : "bg-transparent text-white"
       }`}
     >

@@ -32,9 +32,9 @@ const WebsiteHeader = () => {
 
   return (
     <div
-      className={`py-4 fixed top-0 w-full z-50 text-headertextcolor transition-all duration-300 ${
+      className={`pt-6 pb-8 fixed top-0 w-full z-50 text-headertextcolor transition-all duration-300 ${
         isScrolled
-          ? "bg-headerbackgroundcolor bg-opacity-60 backdrop-blur-md"
+          ? "bg-black/50 bg-opacity-60 backdrop-blur-md text-white"
           : "bg-transparent text-white"
       }`}
     >
@@ -47,7 +47,7 @@ const WebsiteHeader = () => {
               alt="logo"
             />
           </Link>
-          <div className="lg:flex items-center gap-10 hidden">
+          <div className="lg:flex mt-7 items-center gap-10 hidden">
             {routes.map(({ name, path }) => (
               <Link
                 to={`${path}`}
