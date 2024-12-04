@@ -79,7 +79,7 @@ const GetInTouch = () => {
                   autoComplete="off"
                 />
               </div>
-              <button className="mt-4 bg-white text-[#433d99] px-5 py-3 rounded-full hover:bg-[#5B3E9A] hover:text-white hover:-translate-y-1 duration-300 transition-all">
+              <button className="mt-4 bg-white text-black px-5 py-3 rounded-full   hover:text-primary hover:-translate-y-1 duration-300 transition-all">
                 Send Message
               </button>
             </form>
