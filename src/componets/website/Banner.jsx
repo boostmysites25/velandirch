@@ -2,6 +2,7 @@ import React from "react";
 import { contactusbanner, defaultBanner } from "../../constant";
 import ReactPlayer from "react-player";
 import servicepagebanner from "../../assets/videos/servicepagebanner.mp4";
+import servicepagebannerimage from "../../assets/images/servicesbanner.jpg";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 const Banner = ({ page, desc }) => {
@@ -11,15 +12,20 @@ const Banner = ({ page, desc }) => {
       className="h-[40vh] sm:h-[55vh] md:h-[70vh] w-full relative"
     >
       {page === "Services" ? (
-        <ReactPlayer
-          url={servicepagebanner}
-          loop
-          muted
-          width="100vw"
-          height="100%"
-          playsinline
-          playing
-          className="react-player left-0 top-0 absolute object-cover h-full w-full"
+        // <ReactPlayer
+        //   url={servicepagebanner}
+        //   loop
+        //   muted
+        //   width="100vw"
+        //   height="100%"
+        //   playsinline
+        //   playing
+        //   className="react-player left-0 top-0 absolute object-cover h-full w-full"
+        // />
+        <img
+          src={servicepagebannerimage}
+          className="object-cover object-[100%_35%] h-full w-full"
+          alt=""
         />
       ) : (
         <img
