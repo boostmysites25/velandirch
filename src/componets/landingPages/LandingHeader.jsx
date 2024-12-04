@@ -1,7 +1,7 @@
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { logoImg } from "../../constant";
 
@@ -35,8 +35,31 @@ const LandingHeader = () => {
     setIsOpen(!isOpen);
   };
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="py-4 fixed top-0 w-full bg-black/10 backdrop-blur-md z-50 text-white">
+    <div
+      className={`py-4 fixed top-0 w-full   z-50  ${
+        isScrolled
+          ? "bg-black/10 bg-opacity-60 backdrop-blur-md"
+          : "bg-transparent text-white"
+      }`}
+    >
       <div className="wrapper flex justify-between items-center gap-10">
         <div className="flex justify-between items-center gap-20 w-full pl-[1rem] lg:pl-0">
           <Link smooth={true} to="banner" className="cursor-pointer">

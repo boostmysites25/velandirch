@@ -7,8 +7,8 @@ import whyChooseUsPng from "./assets/images/whychooseus-png.png";
 import faqPng from "./assets/images/faq-character.png";
 import appDevBanner from "./assets/images/app-dev-banner.jpg";
 import webDevBanner from "./assets/images/web-landing-banner.jpg";
-import webLandingAbout from "./assets/images/web-landing-about1.png";
-import appLandingAbout from "./assets/images/app-landing-about.png";
+import webLandingAbout from "./assets/images/web-landing-about1.jpg";
+import appLandingAbout from "./assets/images/app-landing-about.jpg";
 import endlessOpportunitiesImg1 from "./assets/images/section-8-img-1.png";
 import endlessOpportunitiesImg2 from "./assets/images/section-8-img-2.png";
 import endlessOpportunitiesImg3 from "./assets/images/section-8-img-3.png";
@@ -159,28 +159,28 @@ export const webDevelopmentServices = [
     title: "E-commerce Websites",
     icon: require("./assets/images/icons/online-shopping.png"),
     description:
-      "Empowering online businesses with tailored e-commerce solutions. Our platforms enhance customer engagement, streamline operations, and drive substantial revenue growth.",
+      "Empowering online businesses with tailored e-commerce solutions powered by AI. Our platforms enhance customer engagement, streamline operations, and drive substantial revenue growth through personalized shopping experiences and intelligent recommendations.",
   },
   {
     id: 2,
     title: "Social Media Websites",
     icon: require("./assets/images/icons/socialmedia.png"),
     description:
-      "Creating custom social media websites that captivate audiences and build brand loyalty, driving growth effortlessly.",
+      "Creating custom social media websites that captivate audiences with AI-driven content recommendations and engagement strategies, building brand loyalty and driving growth effortlessly.",
   },
   {
     id: 3,
     title: "Landing Websites",
     icon: require("./assets/images/icons/landing-page.png"),
     description:
-      "Crafting high-converting landing pages that grab attention and inspire action. Designs that showcase your brand’s message and maximize conversions.",
+      "Crafting high-converting landing pages with AI-enhanced design and user behavior tracking to grab attention and inspire action. Designs that showcase your brand’s message and maximize conversions through personalized experiences.",
   },
   {
     id: 4,
     title: "Custom Websites",
     icon: require("./assets/images/icons/software-development.png"),
     description:
-      "Delivering bespoke websites designed to meet your unique business needs. Our solutions seamlessly combine creativity and functionality for an exceptional online presence.",
+      "Delivering bespoke websites powered by AI to meet your unique business needs. Our solutions seamlessly combine creativity, functionality, and AI-driven features for an exceptional online presence.",
   },
 ];
 
@@ -191,28 +191,28 @@ export const appDevelopmentServices = [
     title: "iOS App Development",
     icon: require("./assets/images/icons/ios-development.png"),
     description:
-      "Specializing in iOS app development using Swift and Objective-C. Delivering apps optimized for performance, speed, and responsiveness.",
+      "Specializing in iOS app development using Swift and Objective-C. Delivering apps optimized for performance, speed, and responsiveness with AI-powered features like predictive analytics and personalized user experiences.",
   },
   {
     id: 2,
     title: "Android App Development",
     icon: require("./assets/images/icons/android-development.png"),
     description:
-      "Designing and developing Android apps tailored to your business goals. Leveraging Java and Kotlin to create robust and efficient applications.",
+      "Designing and developing Android apps tailored to your business goals. Leveraging Java and Kotlin alongside AI technologies to create robust, efficient applications with intelligent automation and enhanced user engagement.",
   },
   {
     id: 3,
     title: "Flutter App Development",
     icon: require("./assets/images/icons/flutter-development.png"),
     description:
-      "Using Flutter to create apps for both iOS and Android with a single codebase. Implementing smart strategies to overcome challenges and ensure top performance.",
+      "Using Flutter to create apps for both iOS and Android with a single codebase. Integrating AI-driven solutions to overcome challenges, enhance performance, and deliver smarter, feature-rich applications.",
   },
   {
     id: 4,
     title: "Hybrid App Development",
     icon: require("./assets/images/icons/hybrid-app-development.png"),
     description:
-      "Developing feature-rich hybrid apps tailored to your business needs. Creating mobile-friendly apps that work seamlessly across iOS and Android platforms.",
+      "Developing feature-rich hybrid apps tailored to your business needs. Incorporating AI-powered tools to create mobile-friendly apps that work seamlessly across iOS and Android platforms while delivering intelligent insights and improved functionality.",
   },
 ];
 

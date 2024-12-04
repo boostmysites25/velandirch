@@ -90,7 +90,7 @@ export const LandingPage = ({ page }) => {
       <div
         data-aos="fade-up"
         id="contacts"
-        className="py-[5rem] text-primarytextcolor bg-backgroundcolor"
+        className=" py-[2rem] sm:py-[5rem] text-primarytextcolor bg-backgroundcolor"
       >
         <div className="wrapper">
           <div className="h-full grid md:grid-cols-2 gap-10 py-5">
@@ -234,7 +234,7 @@ export const LandingPage = ({ page }) => {
           <div data-aos="fade-left" className="h-full">
             <img
               src={isWebDevelopment ? webLandingAbout : appLandingAbout}
-              className="object-contain max-h-[30rem] w-full"
+              className="object-contain max-h-[30rem] w-full rounded-lg"
               alt=""
             />
           </div>
