@@ -148,3 +148,15 @@ body {
 .react-player video {
   object-fit: fill !important;
 }
+
+@layer components {
+  .gradient-border {
+    @apply border-2 border-transparent;
+    border-image: linear-gradient(
+      90deg,
+      rgba(242, 128, 83, 0.5676864495798319) 0%,
+      rgba(120, 120, 133, 0.413624824929972) 100%
+    );
+    border-image-slice: 1;
+  }
+}

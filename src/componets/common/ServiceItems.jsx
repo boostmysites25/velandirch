@@ -35,19 +35,21 @@ const ServiceItems = () => {
               data-aos="fade-up"
               className=" rounded-lg p-[1px]  cursor-pointer"
             >
-              <div className="rounded-lg border bg-backgroundcolor border-primary  hover:bg-black/30 transition-all duration-300 p-5 flex flex-col justify-between items-start text-start h-full gap-4">
-                <div className="flex flex-col gap-3">
-                  <h5 className="font-semibold text-xl font-raleway">
-                    {service.title}
-                  </h5>
-                  <p className="desc text-primarytextcolor">{service.desc}</p>
+              <div className="hover:scale-105   group rounded-lg bg-backgro-gradient p-[1px] transition-all h-full duration-500">
+                <div className="rounded-lg bg-backgroundcolor hover:bg-custom-gradient p-5 flex flex-col justify-between items-start text-start h-full gap-4">
+                  <div className="flex flex-col gap-3">
+                    <h5 className="font-semibold text-xl font-raleway transition-colors duration-300 group-hover:text-primary text-black">
+                      {service.title}
+                    </h5>
+                    <p className="desc text-primarytextcolor">{service.desc}</p>
+                  </div>
+                  <button
+                    // onClick={() => handleSelectServiceToShowDetail(service)}
+                    className="font-inter mt-1 flex items-center gap-3 group-hover:text-primary text-black transition-all duration-300 underline underline-offset-4"
+                  >
+                    Learn More <PiCaretDoubleRightBold />
+                  </button>
                 </div>
-                <button
-                  // onClick={() => handleSelectServiceToShowDetail(service)}
-                  className="font-inter mt-1 flex items-center gap-3 hover:text-primary transition-all duration-300 underline underline-offset-4"
-                >
-                  Learn More <PiCaretDoubleRightBold />
-                </button>
               </div>
             </Link>
           ))}

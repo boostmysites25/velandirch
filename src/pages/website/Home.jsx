@@ -37,7 +37,8 @@ const Home = () => {
               IT Services
             </div>
             <h1 className="heading-1">
-              Your Partner in Transformative Digital Solutions
+              Your <span className="text-primary">AI</span> Partner in
+              Transformative Digital Solutions
             </h1>
             <p className="desc">
               At VELANDIRCH AI, we craft cutting-edge IT solutions tailored to
