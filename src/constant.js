@@ -39,6 +39,7 @@ import aboutfour from "./assets/images/aboutfour.jpg";
 import aboutfive from "./assets/images/aboutfive.jpg";
 import aboutusintroone from "./assets/images/aboutusintroone.jpg";
 import aboutusintrotwo from "./assets/images/aboutusintrotwo.jpg";
+import allbgimage from "./assets/images/allbgimage.jpg";
 import { lazy } from "react";
 import { BiBrain, BiBulb, BiRocket } from "react-icons/bi";
 import { GoGraph } from "react-icons/go";
@@ -83,6 +84,7 @@ export {
   contactusbanner,
   aboutusintroone,
   aboutusintrotwo,
+  allbgimage,
 };
 
 // company details

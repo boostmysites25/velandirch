@@ -146,7 +146,7 @@ const WhyChooseUs = () => {
               <img
                 src={whyus1}
                 alt="whyus1"
-                className="max-h-[392px] rounded-xl"
+                className="h-full object-cover  rounded-xl"
               />
             </div>
           </div>
