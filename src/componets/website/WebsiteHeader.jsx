@@ -43,7 +43,7 @@ const WebsiteHeader = () => {
           <Link to="/">
             <img
               src={logoImg}
-              className="h-[3rem] md:h-[3.75rem] scale-125"
+              className="h-[2rem] md:h-[2.75rem] ml-5 scale-125"
               alt="logo"
             />
           </Link>

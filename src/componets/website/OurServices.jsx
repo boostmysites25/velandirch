@@ -129,7 +129,7 @@ const OurServices = ({ length }) => {
                 key={service.id}
                 className=" rounded-lg p-[1px]  cursor-pointer"
               >
-                <div className="group hover:scale-105  group rounded-lg bg-backgro-gradient p-[1px] transition-all  duration-500">
+                <div className="group hover:scale-105   rounded-lg bg-backgro-gradient p-[1px] transition-all  duration-500">
                   <div className="rounded-lg bg-backgroundcolor hover:bg-custom-gradient p-5 flex flex-col justify-between items-start text-start h-[410px] sm:h-[300px] gap-4">
                     <div className="flex flex-col gap-3">
                       <h5 className="font-semibold group-hover:text-primary text-xl font-raleway">
