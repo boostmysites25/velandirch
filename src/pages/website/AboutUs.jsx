@@ -76,12 +76,12 @@ const AboutUs = () => {
                     Innovation at Heart
                   </h6>
                   <p className="desc mt-2">
-                    At VELANDIRCH TECHNOLOGIES, innovation is at the core of
-                    everything we do. We continuously embrace emerging
-                    technologies and industry trends to craft future-ready
-                    solutions that redefine possibilities. Our mission is to
-                    deliver solutions that not only address today's challenges
-                    but also anticipate and adapt to the demands of tomorrow.
+                    At VELANDIRCH AI, innovation is at the core of everything we
+                    do. We continuously embrace emerging technologies and
+                    industry trends to craft future-ready solutions that
+                    redefine possibilities. Our mission is to deliver solutions
+                    that not only address today's challenges but also anticipate
+                    and adapt to the demands of tomorrow.
                   </p>
                 </div>
                 <div data-aos="fade-left" className="h-full flex items-center">
@@ -108,11 +108,11 @@ const AboutUs = () => {
                     Client-Centric Approach
                   </h6>
                   <p className="desc mt-2">
-                    At VELANDIRCH TECHNOLOGIES, we recognize that every business
-                    is unique, with its own set of challenges and goals. That’s
-                    why we adopt a personalized approach, customizing each
-                    project to align seamlessly with your specific requirements.
-                    Whether you’re a startup or an established enterprise, we
+                    At VELANDIRCH AI, we recognize that every business is
+                    unique, with its own set of challenges and goals. That’s why
+                    we adopt a personalized approach, customizing each project
+                    to align seamlessly with your specific requirements. Whether
+                    you’re a startup or an established enterprise, we
                     collaborate closely with our clients, fostering long-term
                     partnerships built on trust, transparency, and shared
                     success.
@@ -128,7 +128,7 @@ const AboutUs = () => {
                     Commitment to Excellence
                   </h6>
                   <p className="desc mt-2">
-                    At VELANDIRCH TECHNOLOGIES, quality and reliability form the
+                    At VELANDIRCH AI, quality and reliability form the
                     foundation of our work. We take pride in crafting
                     world-class digital solutions that are robust, scalable, and
                     secure. Every project undergoes thorough quality assurance,
@@ -160,9 +160,9 @@ const AboutUs = () => {
                     Innovation with Purpose
                   </h6>
                   <p className="desc mt-2">
-                    At VELANDIRCH TECHNOLOGIES, we believe that technology is
-                    only as valuable as the purpose it serves. Our mission is to
-                    harness the power of technology to create meaningful
+                    At VELANDIRCH AI, we believe that technology is only as
+                    valuable as the purpose it serves. Our mission is to harness
+                    the power of technology to create meaningful
                     impacts—streamlining operations, elevating customer
                     experiences, and driving business growth. Our solutions are
                     built to empower businesses, enabling them to scale and lead
@@ -181,8 +181,8 @@ const AboutUs = () => {
                   <p className="desc mt-2">
                     We provide a comprehensive range of services, ensuring
                     end-to-end support from initial concept to deployment and
-                    beyond. At VELANDIRCH TECHNOLOGIES, our aim is to be your
-                    trusted partner throughout your digital journey—whether it's
+                    beyond. At VELANDIRCH AI, our aim is to be your trusted
+                    partner throughout your digital journey—whether it's
                     establishing your online presence, streamlining your
                     operations, or delivering engaging experiences for your
                     customers.
@@ -202,7 +202,7 @@ const AboutUs = () => {
         <UnlockEfficiency />
         <div className="wrapper mt-[5rem]">
           <h2 data-aos="fade-up" className="heading-2">
-            Why Choose VELANDIRCH TECHNOLOGIES?
+            Why Choose VELANDIRCH AI?
           </h2>
           <ul className="mt-[2rem] flex flex-col gap-3 list-disc list-outside text-start">
             {whyChooseUsContent.map((item) => (

@@ -77,10 +77,10 @@ const WhyChooseUs = () => {
             data-aos="fade-up"
             className="desc max-w-[40rem] mx-auto"
           >
-            At VELANDIRCH TECHNOLOGIES, we’re dedicated to delivering solutions
-            that are custom-fit to your business. Our team is passionate about
-            innovation and works alongside you to understand your vision,
-            transforming it into a digital reality that exceeds expectations.
+            At VELANDIRCH AI, we’re dedicated to delivering solutions that are
+            custom-fit to your business. Our team is passionate about innovation
+            and works alongside you to understand your vision, transforming it
+            into a digital reality that exceeds expectations.
           </p>
           <div
             data-aos-offset={-400}
@@ -109,9 +109,9 @@ const WhyChooseUs = () => {
                   />
                 </div>
                 <p className="desc text-primarytextcolor text-start mt-3">
-                  A reputable IT company, VELANDIRCH TECHNOLOGIES specializes in
-                  crafting innovative, tailored solutions that align with your
-                  business goals.
+                  A reputable IT company, VELANDIRCH AI specializes in crafting
+                  innovative, tailored solutions that align with your business
+                  goals.
                 </p>
               </div>
               <div

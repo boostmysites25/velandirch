@@ -103,9 +103,9 @@ const OurServices = ({ length }) => {
           Cutting-Edge Innovation with Unmatched Reliability
         </h2>
         <p data-aos="fade-up" className="desc max-w-[50rem]">
-          At VELANDIRCH TECHNOLOGIES , we’re dedicated to crafting technology
-          solutions that empower businesses to thrive. Here’s how we can support
-          your vision with tailored, innovative services:
+          At VELANDIRCH AI , we’re dedicated to crafting technology solutions
+          that empower businesses to thrive. Here’s how we can support your
+          vision with tailored, innovative services:
         </p>
         <div
           data-aos="fade-up"

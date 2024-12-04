@@ -25,9 +25,9 @@ const Contact = () => {
             <h2 className="heading-2">Get In Touch With Us!</h2>
             <p className="desc">
               Get in touch with
-              <span className="font-semibold">VELANDIRCH TECHNOLOGIES</span> and
-              let us be the catalyst for your digital transformation. Together,
-              we can create solutions that align with your vision, helping your
+              <span className="font-semibold">VELANDIRCH AI</span> and let us be
+              the catalyst for your digital transformation. Together, we can
+              create solutions that align with your vision, helping your
               business reach new heights.
             </p>
           </div>

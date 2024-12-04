@@ -40,9 +40,9 @@ const Home = () => {
               Your Partner in Transformative Digital Solutions
             </h1>
             <p className="desc">
-              At VELANDIRCH TECHNOLOGIES, we craft cutting-edge IT solutions
-              tailored to meet the evolving needs of businesses, ensuring
-              efficiency, growth, and innovation.
+              At VELANDIRCH AI, we craft cutting-edge IT solutions tailored to
+              meet the evolving needs of businesses, ensuring efficiency,
+              growth, and innovation.
             </p>
             <Link to="/contact-us" className="primary-btn mt-2">
               Get Started
@@ -65,13 +65,13 @@ const Home = () => {
                 Enhancing Operations with Advanced Technology.
               </h2>
               <p className="desc">
-                Welcome to VELANDIRCH TECHNOLOGIES —where technology meets
-                innovation to drive your success. We specialize in creating
-                powerful digital experiences and delivering solutions that
-                simplify complex challenges. With a wide range of services from
-                mobile and web development to AI and data intelligence, we’re
-                here to help you unlock new potential and stay ahead in today’s
-                fast-paced digital landscape.
+                Welcome to VELANDIRCH AI —where technology meets innovation to
+                drive your success. We specialize in creating powerful digital
+                experiences and delivering solutions that simplify complex
+                challenges. With a wide range of services from mobile and web
+                development to AI and data intelligence, we’re here to help you
+                unlock new potential and stay ahead in today’s fast-paced
+                digital landscape.
               </p>
             </div>
             <div className="flex gap-5 mt-4 justify-center lg:justify-start">
@@ -112,15 +112,15 @@ const Home = () => {
             Dependable IT Support Tailored for Your Business
           </h1>
           <p className="desc max-w-[50rem] mx-auto">
-            At VELANDIRCH TECHNOLOGIES, we recognize that your website is more
-            than just an online presence—it's the cornerstone of your brand, a
-            powerful business tool, and often the first interaction with
-            potential customers. In a world where first impressions are
-            critical, having a well-designed, fast, and responsive website is
-            essential for business success. Our website development services go
-            beyond the basics to deliver a complete digital experience that
-            enhances engagement, drives conversions, and accelerates your
-            business growth.
+            At VELANDIRCH AI, we recognize that your website is more than just
+            an online presence—it's the cornerstone of your brand, a powerful
+            business tool, and often the first interaction with potential
+            customers. In a world where first impressions are critical, having a
+            well-designed, fast, and responsive website is essential for
+            business success. Our website development services go beyond the
+            basics to deliver a complete digital experience that enhances
+            engagement, drives conversions, and accelerates your business
+            growth.
           </p>
         </div>
       </section>
