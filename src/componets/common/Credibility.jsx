@@ -55,7 +55,7 @@ const Credibility = () => {
   });
   return (
     <div
-      className="py-[5rem] bg-center bg-cover relative text-white"
+      className="py-[1rem] sm:py-[3rem] bg-center bg-cover relative text-white"
       //   style={{ backgroundImage: `url(${bgImg})` }}
       //   data-aos="fade-up"
       //   data-aos-offset={-200}

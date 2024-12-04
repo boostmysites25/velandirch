@@ -32,7 +32,17 @@ import blockchaindevelopment from "./assets/images/services/blockchaindevelopmen
 import machinelearning from "./assets/images/services/machinelearning.jpg";
 import clouddevelopment from "./assets/images/services/clouddevelopment.jpg";
 import rpa from "./assets/images/services/rpa.jpg";
+import aboutone from "./assets/images/aboutone.jpg";
+import abouttwo from "./assets/images/abouttwo.jpg";
+import aboutthree from "./assets/images/aboutthree.jpg";
+import aboutfour from "./assets/images/aboutfour.jpg";
+import aboutfive from "./assets/images/aboutfive.jpg";
+import aboutusintroone from "./assets/images/aboutusintroone.jpg";
+import aboutusintrotwo from "./assets/images/aboutusintrotwo.jpg";
 import { lazy } from "react";
+import { BiBrain, BiBulb, BiRocket } from "react-icons/bi";
+import { GoGraph } from "react-icons/go";
+import { SlBadge } from "react-icons/sl";
 const Home = lazy(() => import("./pages/website/Home"));
 const Services = lazy(() => import("./pages/website/Services"));
 const ContactUs = lazy(() => import("./pages/website/ContactUs"));
@@ -71,6 +81,8 @@ export {
   clouddevelopment,
   rpa,
   contactusbanner,
+  aboutusintroone,
+  aboutusintrotwo,
 };
 
 // company details
@@ -283,22 +295,27 @@ export const allServices = [
 // about us page why choose content
 export const whyChooseUsContent = [
   {
+    img: <BiBrain className="w-6 h-6" />,
     title: "Transforming Vision into Reality",
     desc: "We collaborate closely to understand your vision and turn it into innovative digital solutions that exceed expectations, tailored specifically to your business needs.",
   },
   {
+    img: <BiRocket className="w-6 h-6" />,
     title: "Empowering Businesses with Technology",
     desc: "Our expertise in cutting-edge technologies ensures that every solution we deliver helps your business thrive in today’s competitive landscape.",
   },
   {
+    img: <BiBulb className="w-6 h-6" />,
     title: "Driving Efficiency with Innovation",
     desc: "From automating processes to building intelligent solutions, we bring innovation to the forefront, enabling your business to operate smarter and more efficiently.",
   },
   {
+    img: <GoGraph className="w-6 h-6" />,
     title: "Data-Driven Decision Making",
     desc: "We provide insightful analytics and intelligence to help you make informed decisions, uncover opportunities, and stay ahead in your industry.",
   },
   {
+    img: <SlBadge className="w-6 h-6" />,
     title: "Commitment to Excellence",
     desc: "We are dedicated to delivering exceptional service and long-term partnerships, supporting your journey from idea to execution and beyond.",
   },
@@ -513,5 +530,43 @@ export const appPortfolioHomepage = [
     title: "House of Deliverance",
     description:
       "A spiritual app offering resources for faith-building and inspiration.",
+  },
+];
+
+export const aboutUsItems = [
+  {
+    title: "Innovation at Heart",
+    description:
+      "At VELANDIRCH AI, innovation is at the core of everything we do. We continuously embrace emerging technologies and industry trends to craft future-ready solutions that redefine possibilities.",
+    image: aboutone,
+    gradient: "from-primary/60 to-primary/80",
+  },
+  {
+    title: "Client-Centric Approach",
+    description:
+      "We adopt a personalized approach, customizing each project to align seamlessly with your specific requirements. We collaborate closely with our clients, fostering long-term partnerships built on trust, transparency, and shared success.",
+    image: abouttwo,
+    gradient: "from-secondary/60 to-secondary/80",
+  },
+  {
+    title: "Commitment to Excellence",
+    description:
+      "Quality and reliability form the foundation of our work. We take pride in crafting world-class digital solutions that are robust, scalable, and secure. Every project undergoes thorough quality assurance.",
+    image: aboutthree,
+    gradient: "from-primary/60 to-primary/80",
+  },
+  {
+    title: "Innovation with Purpose",
+    description:
+      "We believe that technology is only as valuable as the purpose it serves. Our mission is to harness the power of technology to create meaningful impacts—streamlining operations, elevating customer experiences, and driving business growth.",
+    image: aboutfour,
+    gradient: "from-secondary/60 to-secondary/80",
+  },
+  {
+    title: "End to End Solutions",
+    description:
+      "We provide a comprehensive range of services, ensuring end-to-end support from initial concept to deployment and beyond. Our aim is to be your trusted partner throughout your digital journey.",
+    image: aboutfive,
+    gradient: "from-primary/60 to-primary/80",
   },
 ];

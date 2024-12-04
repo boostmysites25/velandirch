@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Contact from "../../componets/landingPages/Contact";
-import aboutUsImg from "../../assets/images/landing-aboutus.png";
+import aboutUsImg from "../../assets/images/aboutuscontent.jpg";
 import WhyChooseUs from "../../componets/common/WhyChooseUs";
 import ReactPlayer from "react-player";
 import { homeBannerVideo } from "../../constant";
@@ -84,10 +84,13 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div data-aos="fade-left" className="h-full">
+          <div
+            data-aos="fade-left"
+            className="h-full max-h-[300px] max-w-[400px] lg:max-w-full  lg:max-h-[382px] "
+          >
             <img
               src={aboutUsImg}
-              className="object-contain max-h-[30rem]"
+              className=" h-full rounded-lg w-full  mx-auto object-cover"
               alt=""
             />
           </div>

@@ -91,7 +91,7 @@ const OurServices = ({ length }) => {
     }
   };
   return (
-    <div className="py-[5rem] bg-backgroundcolor text-primarytextcolor">
+    <div className="py-[2rem] sm:py-[5rem] bg-backgroundcolor text-primarytextcolor">
       <div
         data-aos="fade-up"
         className="wrapper flex flex-col text-center gap-5 items-center"
@@ -100,12 +100,14 @@ const OurServices = ({ length }) => {
           Our Services
         </div>
         <h2 data-aos="fade-up" className="heading-2 max-w-[50rem]">
-          Cutting-Edge Innovation with Unmatched Reliability
+          Cutting-Edge AI Innovation with Unmatched Reliability
         </h2>
         <p data-aos="fade-up" className="desc max-w-[50rem]">
-          At VELANDIRCH AI , we’re dedicated to crafting technology solutions
-          that empower businesses to thrive. Here’s how we can support your
-          vision with tailored, innovative services:
+          At VELANDIRCH AI, we specialize in harnessing the power of artificial
+          intelligence to craft innovative technology solutions that empower
+          businesses to thrive. By leveraging AI-driven insights and automation,
+          we tailor our services to align with your vision, enabling smarter
+          decision-making, enhanced efficiency, and transformative growth.
         </p>
         <div
           data-aos="fade-up"

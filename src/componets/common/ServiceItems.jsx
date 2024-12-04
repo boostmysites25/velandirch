@@ -14,12 +14,14 @@ const ServiceItems = () => {
           Our Services
         </div>
         <h2 data-aos="fade-up" className="heading-2 max-w-[50rem]">
-          Cutting-Edge Innovation with Unmatched Reliability
+          Empowering the Future with AI Innovation
         </h2>
         <p data-aos="fade-up" className="desc max-w-[50rem]">
-          At VELANDIRCH AI , we’re dedicated to crafting technology solutions
-          that empower businesses to thrive. Here’s how we can support your
-          vision with tailored, innovative services:
+          At VELANDIRCH AI, we’re dedicated to crafting transformative
+          technology solutions that leverage the power of artificial
+          intelligence. Our mission is to revolutionize industries with
+          innovative AI-driven strategies, delivering impactful and reliable
+          solutions tailored to meet the evolving needs of businesses worldwide.
         </p>
 
         <div

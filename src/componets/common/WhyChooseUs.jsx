@@ -7,7 +7,8 @@ import {
   whyChooseUsIcon4,
   whyChooseUsPng,
 } from "../../constant";
-
+import whyus1 from "../../assets/images/whyus1.jpg";
+import whyus2 from "../../assets/images/whyus2.jpg";
 const WhyChooseUs = () => {
   const totalYrs = 3;
   const totalOnTimeCompletionPercentage = 100;
@@ -62,18 +63,18 @@ const WhyChooseUs = () => {
     <section className="py-[3rem] bg-backgroundcolor">
       <div className="wrapper text-center text-primarytextcolor flex flex-col gap-7">
         <div
-          data-aos-offset={-400}
+          data-aos-offset={-200}
           data-aos="fade-up"
           className="gradient-rounded-text-box mx-auto"
         >
           Why Partner with Us
         </div>
         <div className="flex flex-col gap-5">
-          <h2 data-aos-offset={-400} data-aos="fade-up" className="heading-2">
+          <h2 data-aos-offset={-200} data-aos="fade-up" className="heading-2">
             The Driving Force Behind Our IT Solutions
           </h2>
           <p
-            data-aos-offset={-400}
+            data-aos-offset={-200}
             data-aos="fade-up"
             className="desc max-w-[40rem] mx-auto"
           >
@@ -82,7 +83,7 @@ const WhyChooseUs = () => {
             and works alongside you to understand your vision, transforming it
             into a digital reality that exceeds expectations.
           </p>
-          <div
+          {/* <div
             data-aos-offset={-400}
             data-aos="fade-up"
             className="w-full block lg:hidden"
@@ -92,13 +93,13 @@ const WhyChooseUs = () => {
               className="object-contain max-h-[20rem] mx-auto"
               alt="why choose us"
             />
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-5 mt-9">
-            <div className="flex flex-col gap-5 h-full">
+          </div> */}
+          <div className="flex flex-col-reverse md:grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[60rem] mr-auto">
+            <div className="flex flex-col gap-5">
               <div
-                data-aos-offset={-400}
+                data-aos-offset={-200}
                 data-aos="fade-right"
-                className="p-5 border border-primary rounded-xl w-full h-full"
+                className="p-5 border border-primary rounded-xl w-full h-fit"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
                   <h5 className="text-xl font-semibold">Technical Expertise</h5>
@@ -115,9 +116,9 @@ const WhyChooseUs = () => {
                 </p>
               </div>
               <div
-                data-aos-offset={-400}
+                data-aos-offset={-200}
                 data-aos="fade-right"
-                className="p-5 border border-primary rounded-xl w-full h-full"
+                className="p-5 border border-primary rounded-xl w-full h-fit"
               >
                 <div className="flex w-full text-start items-center justify-between gap-3">
                   <h5 className="text-xl font-semibold">
@@ -137,19 +138,33 @@ const WhyChooseUs = () => {
               </div>
             </div>
             <div
-              data-aos-offset={-400}
+              data-aos-offset={-200}
               data-aos="fade-up"
-              className="w-full lg:block hidden"
+              className="w-fit mx-auto md:mx-0"
             >
               <img
-                src={whyChooseUsPng}
-                className="object-contain max-h-[25rem] mx-auto"
-                alt="why choose us"
+                src={whyus1}
+                alt="whyus1"
+                className="max-h-[392px] rounded-xl"
               />
             </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[60rem] ml-auto">
+            <div
+              data-aos-offset={-200}
+              data-aos="fade-up"
+              className=" w-fit md:w-full  flex justify-end sm:mx-auto md:mx-0"
+            >
+              <img
+                src={whyus2}
+                alt="whyus1"
+                className="max-h-[416px] w-full min-h-[300px] rounded-xl object-cover"
+              />
+            </div>
+
             <div className="flex flex-col gap-5 h-full">
               <div
-                data-aos-offset={-400}
+                data-aos-offset={-200}
                 data-aos="fade-left"
                 className="p-5 border border-primary rounded-xl w-full h-full"
               >
@@ -169,7 +184,7 @@ const WhyChooseUs = () => {
                 </p>
               </div>
               <div
-                data-aos-offset={-400}
+                data-aos-offset={-200}
                 data-aos="fade-left"
                 className="p-5 border border-primary rounded-xl w-full h-full"
               >
@@ -197,7 +212,7 @@ const WhyChooseUs = () => {
         <div className="pt-[3rem]">
           <div
             ref={ref}
-            data-aos-offset={-400}
+            data-aos-offset={-200}
             data-aos="fade-up"
             className="w-full text-white grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-5 rounded-3xl bg-gradient-to-r from-secondary to-primary p-[2rem]"
           >
