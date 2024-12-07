@@ -16,17 +16,17 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="py-[3rem] text-primarytextcolor bg-backgroundcolor"
+      className="py-[3rem] text-primarytextcolor bg-backgroundcolor "
     >
-      <div className="wrapper">
+      <div className="wrapper  rounded-lg ">
         <div className="h-full grid md:grid-cols-2 gap-10 py-10">
           {/* data-aos="fade-right" */}
           <div className="flex flex-col gap-4">
             <h2 className="heading-2">Get In Touch With Us!</h2>
             <p className="desc">
               Get in touch with
-              <span className="font-semibold">VELANDIRCH AI</span> and let us be
-              the catalyst for your digital transformation. Together, we can
+              <span className="font-semibold"> VELANDIRCH AI </span> and let us
+              be the catalyst for your digital transformation. Together, we can
               create solutions that align with your vision, helping your
               business reach new heights.
             </p>
@@ -35,7 +35,7 @@ const Contact = () => {
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col gap-4 md:px-[1rem]"
           >
-            <div className="">
+            <div className="hover:scale-105 transition-all duration-500">
               <input
                 type="text"
                 className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"

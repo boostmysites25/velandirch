@@ -143,7 +143,12 @@ const CommonProject = () => {
                 <img
                   src={obj.img}
                   alt={obj.title}
-                  className="rounded-t-xl hover:scale-105 transition-all duration-300 lg:max-h-[316px]  2xl:max-h-[467px] object-cover w-full"
+                  className={`rounded-t-xl hover:scale-105 transition-all duration-300 lg:max-h-[316px]  2xl:max-h-[467px] ${
+                    obj.title === "House of Deliverance" ||
+                    obj.title === "Artisan Express"
+                      ? `object-contain`
+                      : `object-cover`
+                  }  w-full`}
                 />
                 <div className="px-3 mt-3 pb-5">
                   <h4 className="font-semibold text-xl">{obj.title}</h4>

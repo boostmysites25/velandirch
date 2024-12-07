@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const WebsiteFooter = () => {
   return (
-    <div className="py-14 bg-footerbackgrouncolor">
-      <div className="wrapper text-primarytextcolor">
+    <div className="py-14 bg-[#2e2e45]">
+      <div className="wrapper text-white">
         <div className="flex md:flex-row flex-col justify-between gap-10">
           <div className="flex flex-col items-center">
             <img src={logoImg} className="h-[4rem]" alt="" />
@@ -22,7 +22,7 @@ const WebsiteFooter = () => {
                 <Link
                   key={path}
                   to={path}
-                  className="text-primarytextcolor desc text-sm hover:text-primary transition-all duration-300"
+                  className="text-white desc text-sm hover:text-primary transition-all duration-300"
                 >
                   {name}
                 </Link>
@@ -34,14 +34,14 @@ const WebsiteFooter = () => {
                 <h6 className="text-[.9rem] mb-1">Phone</h6>
                 <Link
                   to={`tel:${companyDetails.phone}`}
-                  className="text-primarytextcolor desc text-sm"
+                  className="text-white desc text-sm"
                 >
                   {companyDetails.phone}
                 </Link>
               </div>
               <div className="flex flex-col mt-2">
                 <h6 className="text-[.9rem] mb-1">Office Address</h6>
-                <p className="text-primarytextcolor desc text-sm max-w-[15rem]">
+                <p className="text-white desc text-sm max-w-[15rem]">
                   {companyDetails.address}
                 </p>
               </div>
@@ -52,16 +52,16 @@ const WebsiteFooter = () => {
           <div className="flex justify-center gap-5 w-full">
             <div className="flex gap-5 items-center mt-5">
               <Link>
-                <BsFacebook className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
+                <BsFacebook className="text-xl text-gray-200 hover:text-primary transition-all duration-300" />
               </Link>
               <Link>
-                <BsTwitter className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
+                <BsTwitter className="text-xl text-gray-200 hover:text-primary transition-all duration-300" />
               </Link>
               <Link>
-                <BsLinkedin className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
+                <BsLinkedin className="text-xl text-gray-200 hover:text-primary transition-all duration-300" />
               </Link>
               <Link>
-                <BsYoutube className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
+                <BsYoutube className="text-xl text-gray-200 hover:text-primary transition-all duration-300" />
               </Link>
             </div>
           </div>
