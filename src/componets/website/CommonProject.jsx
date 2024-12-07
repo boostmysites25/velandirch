@@ -1,7 +1,7 @@
 import React from "react";
 import { appPortfolioHomepage, webPortfolioHomepage } from "../../constant";
 import { useKeenSlider } from "keen-slider/react";
-const animation = { duration: 10000, easing: (t) => t };
+const animation = { duration: 60000, easing: (t) => t };
 
 const CommonProject = () => {
   const [sliderRef] = useKeenSlider({
