@@ -5,14 +5,15 @@ import { allServices } from "../../constant";
 import ReactPlayer from "react-player";
 import servicepagebanner from "../../assets/videos/servicepagebanner.mp4";
 import servicepagebannerimage from "../../assets/images/servicesbanner.jpg";
+import homepagebanner from "../../assets/videos/home-banner.mp4";
 
 const ServiceDetailsBanner = () => {
   const { pathname } = useLocation();
   const title = allServices.find((item) => item.link === pathname)?.title;
   return (
     <div className="min-h-[45vh] md:min-h-[70vh] w-full page-banner relative bg-[#17012C]">
-      {/* <ReactPlayer
-        url={servicepagebanner}
+      <ReactPlayer
+        url={homepagebanner}
         loop
         muted
         width="100vw"
@@ -20,12 +21,12 @@ const ServiceDetailsBanner = () => {
         playsinline
         playing
         className="react-player left-0 top-0 absolute object-cover h-full w-full"
-      /> */}
-      <img
+      />
+      {/* <img
         src={servicepagebannerimage}
         alt="service-banner-image"
         className="left-0 top-0 absolute object-cover h-full w-full"
-      />
+      /> */}
       <div className="absolute py-2 top-[40%] left-1/2 -translate-x-1/2 w-full flex flex-col items-center px-3">
         <h1 data-aos="fade-up" className="heading text-white text-center">
           {title}
