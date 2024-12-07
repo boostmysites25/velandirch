@@ -17,7 +17,8 @@ import Testimonials from "../../componets/common/Testimonials";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import Credibility from "../../componets/common/Credibility";
-
+import ReactPlayer from "react-player";
+import servicepagebanner from "../../assets/videos/servicepagebanner.mp4";
 const AboutUs = () => {
   return (
     <>
@@ -183,11 +184,23 @@ const AboutUs = () => {
             ))}
           </ul>
         </div> */}
-        <section className="py-6 sm:py-16 px-4 md:py-12 ">
+        <section className="relative py-6 sm:py-16 px-4 md:py-12 ">
+          <div>
+            <ReactPlayer
+              url={servicepagebanner}
+              loop
+              muted
+              width="100vw"
+              height="100%"
+              playsinline
+              playing
+              className="react-player left-0 top-0 absolute object-cover h-full w-full"
+            />
+          </div>
           <div className="max-w-7xl mx-auto">
             <h2
               data-aos="fade-up"
-              className="heading-2 font-bold text-center mb-12"
+              className="heading-2 font-bold text-center mb-12 text-white"
             >
               Why Choose VELANDIRCH AI?
             </h2>
