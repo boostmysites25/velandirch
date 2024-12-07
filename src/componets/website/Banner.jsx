@@ -51,9 +51,15 @@ const Banner = ({ page, desc }) => {
           data-aos="fade-up"
           className="mt-5 text-base sm:text-xl font-medium px-3 py-2 w-fit rounded-full  flex flex-wrap justify-center text-white items-center gap-1 sm:gap-2"
         >
-          <Link to="/">Home</Link>
-          <IoIosArrowForward />
-          <h4>{page}</h4>
+          {page === "Services" ? (
+            <h4>Empowering Your Vision with Our Expertise</h4>
+          ) : (
+            <>
+              <Link to="/">Home</Link>
+              <IoIosArrowForward />
+              <h4>{page}</h4>
+            </>
+          )}
           {/* <IoIosArrowForward /> */}
           {/* <p>{title}</p> */}
         </div>

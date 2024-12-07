@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-
+import image from "../../assets/images/contactimage.jpg";
 const Contact = () => {
   const {
     register,
@@ -30,17 +30,30 @@ const Contact = () => {
               create solutions that align with your vision, helping your
               business reach new heights.
             </p>
+            <img
+              src={image}
+              alt=""
+              className="max-h-[21rem] object-cover rounded-xl"
+            />
           </div>
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col gap-4 md:px-[1rem]"
           >
             <div className="hover:scale-105 transition-all duration-500">
+              <label htmlFor="" className="mb-6 font-medium">
+                Full Name
+              </label>
               <input
                 type="text"
                 className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 placeholder="Full Name"
                 {...register("fullName", { required: "Full name is required" })}
+                style={{
+                  borderImageSource:
+                    "linear-gradient(90deg, rgba(250,120,67,0.545) 0%, rgba(164,164,164,0.612) 100%)",
+                  borderImageSlice: 1,
+                }}
               />
               {errors.fullName && (
                 <span className="text-red-500 text-sm">
@@ -49,7 +62,10 @@ const Contact = () => {
               )}
             </div>
 
-            <div className="">
+            <div className="hover:scale-105 transition-all duration-500">
+              <label htmlFor="" className="mb-6 font-medium">
+                Mobile Number
+              </label>
               <input
                 type="text"
                 className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
@@ -61,6 +77,11 @@ const Contact = () => {
                     message: "Invalid phone number",
                   },
                 })}
+                style={{
+                  borderImageSource:
+                    "linear-gradient(90deg, rgba(250,120,67,0.545) 0%, rgba(164,164,164,0.612) 100%)",
+                  borderImageSlice: 1,
+                }}
               />
               {errors.mobileNumber && (
                 <span className="text-red-500 text-sm">
@@ -69,7 +90,10 @@ const Contact = () => {
               )}
             </div>
 
-            <div className="">
+            <div className="hover:scale-105 transition-all duration-500">
+              <label htmlFor="" className="mb-6 font-medium">
+                Email
+              </label>
               <input
                 type="email"
                 className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
@@ -81,6 +105,11 @@ const Contact = () => {
                     message: "Invalid email address",
                   },
                 })}
+                style={{
+                  borderImageSource:
+                    "linear-gradient(90deg, rgba(250,120,67,0.545) 0%, rgba(164,164,164,0.612) 100%)",
+                  borderImageSlice: 1,
+                }}
               />
               {errors.email && (
                 <span className="text-red-500 text-sm">
@@ -89,12 +118,20 @@ const Contact = () => {
               )}
             </div>
 
-            <div className="">
+            <div className="hover:scale-105 transition-all duration-500">
+              <label htmlFor="" className="mb-6 font-medium">
+                Message
+              </label>
               <textarea
                 rows="4"
                 className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 placeholder="Message"
                 {...register("message", { required: "Message is required" })}
+                style={{
+                  borderImageSource:
+                    "linear-gradient(90deg, rgba(250,120,67,0.545) 0%, rgba(164,164,164,0.612) 100%)",
+                  borderImageSlice: 1,
+                }}
               />
               {errors.message && (
                 <span className="text-red-500 text-sm">

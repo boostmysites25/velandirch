@@ -44,6 +44,17 @@ import { lazy } from "react";
 import { BiBrain, BiBulb, BiRocket } from "react-icons/bi";
 import { GoGraph } from "react-icons/go";
 import { SlBadge } from "react-icons/sl";
+import { MdOutlineDeveloperMode } from "react-icons/md";
+import {
+  GiArtificialIntelligence,
+  GiRobotLeg,
+  GiVendingMachine,
+} from "react-icons/gi";
+import { HiChatBubbleBottomCenterText } from "react-icons/hi2";
+import { BsFillClipboard2DataFill } from "react-icons/bs";
+import { FaGamepad } from "react-icons/fa";
+import { SiHiveBlockchain } from "react-icons/si";
+import { IoMdCloudDone } from "react-icons/io";
 const Home = lazy(() => import("./pages/website/Home"));
 const Services = lazy(() => import("./pages/website/Services"));
 const ContactUs = lazy(() => import("./pages/website/ContactUs"));
@@ -222,6 +233,7 @@ export const appDevelopmentServices = [
 export const allServices = [
   {
     id: 1,
+    img: <MdOutlineDeveloperMode className="w-6 h-6" />,
     link: "/services/web-app-development",
     title: "Mobile and Web Development",
     desc: "Build a strong digital presence with custom mobile apps and websites that are designed with your audience in mind. Our team creates sleek, responsive, and engaging digital solutions powered by AI to enhance user experiences and drive personalized interactions.",
@@ -230,6 +242,7 @@ export const allServices = [
   },
   {
     id: 2,
+    img: <GiArtificialIntelligence className="w-6 h-6" />,
     link: "/services/ai-development",
     title: "Artificial Intelligence Development",
     desc: "Stay future-ready with our advanced AI solutions. From predictive analytics to machine learning models, we help you make smarter decisions, streamline operations, and boost productivity through intelligent AI-powered automation.",
@@ -238,6 +251,7 @@ export const allServices = [
   },
   {
     id: 3,
+    img: <HiChatBubbleBottomCenterText className="w-6 h-6" />,
     link: "/services/chatbot-development",
     title: "Chatbot Development",
     desc: "Deliver efficient, around-the-clock customer service with AI-powered custom-built chatbots that handle inquiries, support users, and enhance the customer journey. Our bots are tailored to align with your brand’s voice and offer a seamless user experience.",
@@ -246,6 +260,7 @@ export const allServices = [
   },
   {
     id: 4,
+    img: <BsFillClipboard2DataFill className="w-6 h-6" />,
     link: "/services/data-analytics",
     title: "Data Analytics and Business Intelligence",
     desc: "Unlock actionable insights with AI-driven data analytics solutions. Our data analytics services provide a clearer picture of your business performance, helping you make informed, strategic decisions that fuel growth through intelligent data processing.",
@@ -254,6 +269,7 @@ export const allServices = [
   },
   {
     id: 5,
+    img: <FaGamepad className="w-6 h-6" />,
     link: "/services/game-development",
     title: "Game Development",
     desc: "Bring your gaming ideas to life with immersive, AI-enhanced experiences that captivate players. From concept to final launch, we handle every step to create high-quality games powered by AI that resonate with audiences across platforms.",
@@ -262,6 +278,7 @@ export const allServices = [
   },
   {
     id: 6,
+    img: <SiHiveBlockchain className="w-6 h-6" />,
     link: "/services/blockchain-development",
     title: "Blockchain Development",
     desc: "Leverage the power of AI and blockchain to build secure, transparent, and decentralized systems. From cryptocurrency solutions to smart contracts, we deliver innovative AI-powered blockchain applications tailored to your business.",
@@ -270,6 +287,7 @@ export const allServices = [
   },
   {
     id: 7,
+    img: <GiVendingMachine className="w-6 h-6" />,
     link: "/services/machine-learning",
     title: "Machine Learning",
     desc: "Turn your data into actionable intelligence with custom machine learning models powered by AI. From predictive analytics to recommendation engines, we build solutions that learn and adapt to drive meaningful outcomes.",
@@ -278,6 +296,7 @@ export const allServices = [
   },
   {
     id: 8,
+    img: <IoMdCloudDone className="w-6 h-6" />,
     link: "/services/cloud-computing",
     title: "Cloud Computing",
     desc: "Scale your infrastructure seamlessly with AI-enhanced cloud computing solutions. We build secure, scalable, and flexible cloud systems that help your business grow without worrying about limitations.",
@@ -286,6 +305,7 @@ export const allServices = [
   },
   {
     id: 9,
+    img: <GiRobotLeg className="w-6 h-6" />,
     link: "/services/rpa",
     title: "Robotic Process Automation (RPA)",
     desc: "Streamline repetitive tasks with AI-powered RPA solutions that increase efficiency, reduce errors, and free up your team for strategic initiatives. Automate workflows and processes to enhance productivity across your organization with intelligent automation.",

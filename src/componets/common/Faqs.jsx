@@ -53,7 +53,7 @@ const FaqItem = ({ question, answer, i, isOpen, setIsOpen }) => {
       <div
         className={`${
           isOpen === i && "bg-gradient-to-r from-secondary/10 to-primary/80"
-        } p-[1px] rounded-md from-secondary/10 to-primary/80`}
+        } p-[1px] rounded-md bg-gradient-to-r from-secondary/10 to-primary/80`}
       >
         <div
           onClick={() => setIsOpen((prev) => (prev === i ? "" : i))}

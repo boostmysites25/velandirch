@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -11,11 +11,41 @@ import GetInTouch from "../componets/website/GetInTouch";
 
 const ServicePageLayout = () => {
   const { pathname } = useLocation();
+  const wrapperRef = useRef(null);
+  const [isFirstVisit, setIsFirstVisit] = useState(true);
+  const prevPath = useRef(pathname); // To store the previous path
+
+  useEffect(() => {
+    if (pathname.startsWith("/services/")) {
+      // Check if the user is coming to the page for the first time or navigating within
+      if (prevPath.current !== pathname) {
+        // If the path is the same (navigation within the page), scroll to the wrapper
+        if (wrapperRef.current) {
+          const elementPosition =
+            wrapperRef.current.getBoundingClientRect().top + window.pageYOffset;
+          const offset = 100; // Adjust this value to your desired pixel offset
+          window.scrollTo({
+            top: elementPosition - offset,
+            behavior: "smooth",
+          });
+        }
+      } else {
+        // If it's the first time visiting the page, scroll to the top
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      // Update the previous path to the current one
+      prevPath.current = pathname;
+    }
+  }, [pathname]);
   return (
     <>
       <WebsiteHeader />
       <ServiceDetailsBanner />
-      <div className="wrapper">
+      <div ref={wrapperRef} className="wrapper">
         <div className="py-[5rem] grid md:grid-cols-[30%_65%] grid-cols-1 gap-10">
           <div className="w-full flex flex-col gap-10">
             <div
@@ -56,7 +86,7 @@ const ServicePageLayout = () => {
                 </Link>
               </div>
             </Link>
-            <div
+            {/* <div
               data-aos="fade-up"
               className="text-center bg-gradient-to-b from-primary to-[#efb461b1] hidden md:flex flex-col items-start gap-3 px-4 lg:px-6 py-10 rounded-lg"
             >
@@ -78,7 +108,7 @@ const ServicePageLayout = () => {
                   <IoIosArrowRoundForward className="text-3xl" />
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="w-full">
             <Outlet />

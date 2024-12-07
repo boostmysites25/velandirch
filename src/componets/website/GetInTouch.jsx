@@ -1,5 +1,5 @@
 import React from "react";
-
+import image from "../../assets/images/contactimage.jpg";
 const GetInTouch = () => {
   return (
     <div id="contact" className="pb-[5rem] relative">
@@ -7,13 +7,18 @@ const GetInTouch = () => {
       {/* <div className="blue-bg-shape bottom-[-2rem] left-[-2rem] -z-10 rotate-[-45deg]"></div> */}
       <div className="wrapper grid grid-cols-1 lg:grid-cols-2 justify-items-center lg:justify-items-stretch items-center gap-7">
         <div className="flex flex-col gap-5">
-          <h1 className="heading text-center lg:text-start">
+          <h1 className="heading text-center text-lg font-medium lg:text-start">
             Ready to Lead with Innovation? <br /> Let’s Start Your Project
           </h1>
           <p className="description text-center lg:text-start">
             Reach out to discover how our tech solutions can propel your
             business forward.
           </p>
+          <img
+            src={image}
+            alt=""
+            className="max-h-[25rem] object-cover rounded-xl"
+          />
         </div>
         <div className="flex flex-col items-start gap-3">
           <p className="gradient-text uppercase">Let's connect</p>

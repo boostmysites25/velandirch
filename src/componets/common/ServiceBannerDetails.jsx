@@ -28,7 +28,10 @@ const ServiceDetailsBanner = () => {
         className="left-0 top-0 absolute object-cover h-full w-full"
       /> */}
       <div className="absolute py-2 top-[40%] left-1/2 -translate-x-1/2 w-full flex flex-col items-center px-3">
-        <h1 data-aos="fade-up" className="heading text-white text-center">
+        <h1
+          data-aos="fade-up"
+          className="sm:heading-1 text-white text-center text-3xl font-semibold"
+        >
           {title}
         </h1>
         <div

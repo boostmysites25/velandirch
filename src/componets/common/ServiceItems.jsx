@@ -2,6 +2,7 @@ import React from "react";
 import { allServices } from "../../constant";
 import { Link } from "react-router-dom";
 import { PiCaretDoubleRightBold } from "react-icons/pi";
+import { BiBrain } from "react-icons/bi";
 
 const ServiceItems = () => {
   return (
@@ -35,11 +36,17 @@ const ServiceItems = () => {
               to={service.link}
               key={service.id}
               data-aos="fade-up"
-              className=" rounded-lg p-[1px]  cursor-pointer"
+              className=" rounded-lg p-[1px]  cursor-pointer overflow-hidden"
             >
-              <div className="hover:scale-105   group rounded-lg bg-backgro-gradient p-[1px] transition-all h-full duration-500">
-                <div className="rounded-lg bg-backgroundcolor hover:bg-custom-gradient p-5 flex flex-col justify-between items-start text-start h-full gap-4">
+              <div className="   group rounded-lg bg-backgro-gradient  p-[1px] transition-all h-full duration-500 overflow-hidden">
+                <div className="rounded-lg bg-white hover:bg-custom-gradient p-5 flex flex-col justify-between items-start text-start h-full gap-4">
                   <div className="flex flex-col gap-3">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="flex items-center justify-center w-12 h-12 rounded-full bg-orange-100 text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+                        {/* <BiBrain className="w-6 h-6" /> */}
+                        {service.img}
+                      </div>
+                    </div>
                     <h5 className="font-semibold text-xl font-raleway transition-colors duration-300 group-hover:text-primary text-black">
                       {service.title}
                     </h5>
