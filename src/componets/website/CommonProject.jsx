@@ -1,7 +1,7 @@
 import React from "react";
 import { appPortfolioHomepage, webPortfolioHomepage } from "../../constant";
 import { useKeenSlider } from "keen-slider/react";
-const animation = { duration: 60000, easing: (t) => t };
+const animation = { duration: 10000, easing: (t) => t };
 
 const CommonProject = () => {
   const [sliderRef] = useKeenSlider({
@@ -140,18 +140,25 @@ const CommonProject = () => {
                 className="keen-slider__slide border rounded-xl bg-custom-gradient "
                 // data-aos="fade-up"
               >
-                <img
-                  src={obj.img}
-                  alt={obj.title}
-                  className={`rounded-t-xl hover:scale-105 transition-all duration-300 lg:max-h-[316px]  2xl:max-h-[467px] 2xl:min-h-[467px] ${
-                    obj.title === "House of Deliverance" ||
-                    obj.title === "Artisan Express"
-                      ? `object-contain min-h-full`
-                      : `object-cover`
-                  }
-                  ${obj.title === "House of Deliverance" && `2xl:min-h-[480px]`}
-                    w-full`}
-                />
+                <div
+                  className={`  lg:max-h-[316px]  2xl:max-h-[467px] 2xl:min-h-[467px] flex items-end
+                  w-full overflow-hidden`}
+                >
+                  {/* ${obj.title === "House of Deliverance" && `2xl:min-h-[480px]`} */}
+                  <img
+                    src={obj.img}
+                    alt={obj.title}
+                    className={` hover:scale-105 transition-all duration-300   ${
+                      obj.title === "House of Deliverance" ||
+                      obj.title === "Artisan Express"
+                        ? `object-cover  2xl:min-h-[467px]`
+                        : `object-cover`
+                    }
+                   w-full
+                  `}
+                  />
+                  {/* ${obj.title === "House of Deliverance" && `2xl:min-h-[480px]`} */}
+                </div>
                 <div className="px-3 mt-3 pb-5 max-h-[96px]">
                   <h4 className="font-semibold text-xl">{obj.title}</h4>
                   <p className="desc">{obj.description}</p>
