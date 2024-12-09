@@ -39,7 +39,7 @@ const AboutUs = () => {
         <div className="absolute py-2  top-[40%] left-1/2 -translate-x-1/2 w-full flex flex-col items-center px-3">
           <h1
             data-aos="fade-up"
-            className="heading text-white text-center font-raleway text-[2.18rem] md:text-7xl font-bold leading-tight"
+            className="heading text-primary text-center font-raleway text-[2.18rem] md:text-7xl font-bold leading-tight"
           >
             About Us
           </h1>
@@ -185,7 +185,7 @@ const AboutUs = () => {
           </ul>
         </div> */}
         <section className="relative py-6 sm:py-16 px-4 md:py-12 ">
-          <div>
+          {/* <div>
             <ReactPlayer
               url={servicepagebanner}
               loop
@@ -196,11 +196,11 @@ const AboutUs = () => {
               playing
               className="react-player left-0 top-0 absolute object-cover h-full w-full"
             />
-          </div>
+          </div> */}
           <div className="max-w-7xl mx-auto">
             <h2
               data-aos="fade-up"
-              className="heading-2 font-bold text-center mb-12 text-white"
+              className="heading-2 font-bold text-center mb-12 text-black"
             >
               Why Choose VELANDIRCH AI?
             </h2>

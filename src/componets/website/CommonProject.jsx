@@ -115,7 +115,7 @@ const CommonProject = () => {
             {webPortfolioHomepage.map((obj) => (
               <div
                 key={obj.id}
-                className="keen-slider__slide border rounded-xl bg-custom-gradient object-cover"
+                className="keen-slider__slide border-4 border-primary/40 rounded-xl bg-custom-gradient object-cover"
               >
                 <img
                   src={obj.img}
@@ -137,7 +137,7 @@ const CommonProject = () => {
             {appPortfolioHomepage.map((obj) => (
               <div
                 key={obj.title}
-                className="keen-slider__slide border rounded-xl bg-custom-gradient "
+                className="keen-slider__slide border-4 border-primary/40 rounded-xl bg-custom-gradient "
                 // data-aos="fade-up"
               >
                 <div

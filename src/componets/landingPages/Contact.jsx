@@ -23,9 +23,9 @@ const Contact = () => {
           {/* data-aos="fade-right" */}
           <div className="flex flex-col gap-4">
             <h2 className="heading-2">Get In Touch With Us!</h2>
-            <p className="desc">
+            <p className="">
               Get in touch with
-              <span className="font-semibold"> VELANDIRCH AI </span> and let us
+              <span className="font-bold"> VELANDIRCH AI </span> and let us
               be the catalyst for your digital transformation. Together, we can
               create solutions that align with your vision, helping your
               business reach new heights.
@@ -46,7 +46,7 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
+                className="mt-1 w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 placeholder="Full Name"
                 {...register("fullName", { required: "Full name is required" })}
                 style={{
@@ -68,7 +68,7 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
+                className="mt-1 w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 placeholder="Mobile Number"
                 {...register("mobileNumber", {
                   required: "Mobile number is required",
@@ -96,7 +96,7 @@ const Contact = () => {
               </label>
               <input
                 type="email"
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
+                className="mt-1 w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 placeholder="Email"
                 {...register("email", {
                   required: "Email is required",
@@ -124,7 +124,7 @@ const Contact = () => {
               </label>
               <textarea
                 rows="4"
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
+                className="mt-1 w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
                 placeholder="Message"
                 {...register("message", { required: "Message is required" })}
                 style={{

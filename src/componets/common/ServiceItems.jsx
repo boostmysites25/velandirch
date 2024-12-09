@@ -36,9 +36,9 @@ const ServiceItems = () => {
               to={service.link}
               key={service.id}
               data-aos="fade-up"
-              className=" rounded-lg p-[1px]  cursor-pointer overflow-hidden"
+              className=" rounded-lg p-[1px] cursor-pointer"
             >
-              <div className="   group rounded-lg bg-backgro-gradient  p-[1px] transition-all h-full duration-500 overflow-hidden">
+              <div className="   group rounded-lg bg-backgro-gradient  hover:scale-105 shadow-2xl hover:shadow-primary/10 p-[1px] transition-all h-full duration-500 overflow-hidden">
                 <div className="rounded-lg bg-white hover:bg-custom-gradient p-5 flex flex-col justify-between items-start text-start h-full gap-4">
                   <div className="flex flex-col gap-3">
                     <div className="flex items-center gap-4 mb-4">
@@ -47,14 +47,14 @@ const ServiceItems = () => {
                         {service.img}
                       </div>
                     </div>
-                    <h5 className="font-semibold text-xl font-raleway transition-colors duration-300 group-hover:text-primary text-black">
+                    <h5 className="font-semibold text-xl font-raleway transition-colors duration-300 text-primary">
                       {service.title}
                     </h5>
                     <p className="desc text-primarytextcolor">{service.desc}</p>
                   </div>
                   <button
                     // onClick={() => handleSelectServiceToShowDetail(service)}
-                    className="font-inter mt-1 flex items-center gap-3 group-hover:text-primary text-black transition-all duration-300 underline underline-offset-4"
+                    className="font-inter mt-1 flex items-center gap-3 text-primary hover:text-gray-700 transition-all duration-300 underline underline-offset-4"
                   >
                     Learn More <PiCaretDoubleRightBold />
                   </button>

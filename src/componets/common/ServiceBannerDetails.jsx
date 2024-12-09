@@ -30,7 +30,7 @@ const ServiceDetailsBanner = () => {
       <div className="absolute py-2 top-[40%] left-1/2 -translate-x-1/2 w-full flex flex-col items-center px-3">
         <h1
           data-aos="fade-up"
-          className="sm:heading-1 text-white text-center text-3xl font-semibold"
+          className="text-white text-center font-raleway text-[2rem] md:text-[3.5rem] font-bold leading-tight"
         >
           {title}
         </h1>
