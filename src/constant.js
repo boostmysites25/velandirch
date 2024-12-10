@@ -103,7 +103,7 @@ export const companyDetails = {
   phone: "+91-7904623740",
   whatsapp: "+91-7904623740",
   whatsappbox: "7904623740",
-  email: "example@domainname.com",
+  email: "vijayprasathnd@gmail.com",
   address:
     "101,Unit 101, Oxford Towers, 139, HAL Old Airport Rd, Kodihalli, Bengaluru, Karnataka 560008",
 };
