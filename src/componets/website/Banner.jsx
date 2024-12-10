@@ -35,7 +35,7 @@ const Banner = ({ page, desc }) => {
           alt=""
         />
       )}
-      <div className="absolute top-0 w-full h-full bg-black/20"></div>
+      <div className="absolute top-0 w-full h-full bg-black/50"></div>
       {/* <img src={defaultBanner} className="object-cover h-full w-full" alt="" /> */}
       <div className="absolute py-2  top-[40%] left-1/2 -translate-x-1/2 w-full flex flex-col items-center px-3">
         <h1
