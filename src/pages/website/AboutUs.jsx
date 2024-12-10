@@ -31,7 +31,7 @@ const AboutUs = () => {
           className="object-cover object-[100%_35%] h-full w-full"
           alt=""
         />
-        <div className="absolute top-0 w-full h-full bg-black/20"></div>
+        <div className="absolute top-0 w-full h-full bg-black/50"></div>
 
         {/* <h2 className="font-raleway text-[2.18rem] md:text-7xl font-bold leading-tight text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[10%] text-center">
           About Us
@@ -39,7 +39,7 @@ const AboutUs = () => {
         <div className="absolute py-2  top-[40%] left-1/2 -translate-x-1/2 w-full flex flex-col items-center px-3">
           <h1
             data-aos="fade-up"
-            className="heading text-primary text-center font-raleway text-[2.18rem] md:text-7xl font-bold leading-tight"
+            className="heading text-white text-center font-raleway text-[2.18rem] md:text-7xl font-bold leading-tight"
           >
             About Us
           </h1>
@@ -52,7 +52,7 @@ const AboutUs = () => {
           >
             <Link to="/">Home</Link>
             <IoIosArrowForward />
-            <h4>About us</h4>
+            <h4 className="text-white">About us</h4>
             {/* <IoIosArrowForward /> */}
             {/* <p>{title}</p> */}
           </div>

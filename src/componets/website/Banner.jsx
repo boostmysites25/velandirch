@@ -52,7 +52,10 @@ const Banner = ({ page, desc }) => {
           className="mt-5 text-base sm:text-xl font-medium px-3 py-2 w-fit rounded-full  flex flex-wrap justify-center text-white items-center gap-1 sm:gap-2"
         >
           {page === "Services" ? (
-            <h4>Empowering Your Vision with Our Expertise</h4>
+            <h4>
+              Empowering Your Vision with Our
+              <span className="text-primary font-medium"> AI</span> Expertise
+            </h4>
           ) : (
             <>
               <Link to="/">Home</Link>

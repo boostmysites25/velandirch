@@ -118,20 +118,26 @@ const OurServices = ({ length }) => {
         <div
           data-aos="fade-up"
           ref={sliderRefone}
-          className="keen-slider grid sm:grid-cols-2 md:grid-cols-3 h-[480px] sm:h-[400px]  mt-3"
+          className="keen-slider grid sm:grid-cols-2 md:grid-cols-3   mt-3"
         >
           {services.map((service) => (
-            <div className="keen-slider__slide  p-4">
+            <div className="keen-slider__slide  p-4 h-full">
               <Link
                 onClick={() => handleSelectServiceToShowDetail(service)}
                 // data-aos="fade-up"
                 to={service.link}
                 key={service.id}
-                className=" rounded-lg p-[1px]  cursor-pointer"
+                className=" rounded-lg p-[1px]  cursor-pointer h-full"
               >
                 <div className="group hover:scale-105   rounded-lg bg-backgro-gradient p-[1px] transition-all  duration-500">
-                  <div className="rounded-lg bg-backgroundcolor hover:bg-custom-gradient p-5 flex flex-col justify-between items-start text-start h-[410px] sm:h-[300px] gap-4">
+                  <div className="rounded-lg bg-white hover:bg-custom-gradient p-5 flex flex-col justify-between items-start text-start h-full gap-4">
                     <div className="flex flex-col gap-3">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-orange-100 text-orange-600 group-hover:bg-orange-600 group-hover:text-white h-full transition-colors duration-300">
+                          {/* <BiBrain className="w-6 h-6" /> */}
+                          {service.img}
+                        </div>
+                      </div>
                       <h5 className="font-semibold text-primary text-xl font-raleway">
                         {service.title}
                       </h5>

@@ -134,10 +134,29 @@ const ContactUs = () => {
                     )}
                   </div>
                 </div>
+                <div className="flex flex-col gap-1">
+                  <input
+                    type="tel"
+                    className="border-primary/40 p-2 rounded-md border outline-none bg-transparent"
+                    placeholder="Subject"
+                    {...register("subject", {
+                      required: "Subject is required",
+                      pattern: {
+                        value: /^[0-9]{10}$/,
+                        message: "Invalid phone number",
+                      },
+                    })}
+                  />
+                  {errors.phone && (
+                    <span className="text-red-500 text-sm">
+                      {errors.phone.message}
+                    </span>
+                  )}
+                </div>
 
                 <div className="flex flex-col gap-1">
                   <textarea
-                    rows="4"
+                    rows="6"
                     className="border-primary/40 p-2 rounded-md border outline-none bg-transparent"
                     placeholder="Message"
                     {...register("message", {
@@ -153,7 +172,7 @@ const ContactUs = () => {
 
                 <button
                   type="submit"
-                  className="text-white hover:text-white cursor-pointer font-light tracking-wide  border bg-primary/60 border-primary hover:bg-primary text-sm  hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300"
+                  className="text-white hover:text-white cursor-pointer font-light tracking-wide  border bg-primary/60 border-primary hover:bg-primary text-sm  hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-4 min-w-[7rem] flex justify-center text-center transition-all duration-300"
                 >
                   Send Message
                 </button>

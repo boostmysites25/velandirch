@@ -25,8 +25,8 @@ const Contact = () => {
             <h2 className="heading-2">Get In Touch With Us!</h2>
             <p className="">
               Get in touch with
-              <span className="font-bold"> VELANDIRCH AI </span> and let us
-              be the catalyst for your digital transformation. Together, we can
+              <span className="font-bold"> VELANDIRCH AI </span> and let us be
+              the catalyst for your digital transformation. Together, we can
               create solutions that align with your vision, helping your
               business reach new heights.
             </p>
@@ -46,8 +46,8 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                className="mt-1 w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                placeholder="Full Name"
+                className="mt-1 w-full placeholder-slate-800 bg-transparent outline-none border-2 rounded-sm font-light border-gray-400 px-2 py-3"
+                placeholder="Enter Full Name"
                 {...register("fullName", { required: "Full name is required" })}
                 style={{
                   borderImageSource:
@@ -68,8 +68,8 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                className="mt-1 w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                placeholder="Mobile Number"
+                className="mt-1 w-full bg-transparent outline-none placeholder-slate-800 border-2 rounded-sm font-light border-gray-400 px-2 py-3"
+                placeholder="Enter Mobile Number"
                 {...register("mobileNumber", {
                   required: "Mobile number is required",
                   pattern: {
@@ -96,8 +96,8 @@ const Contact = () => {
               </label>
               <input
                 type="email"
-                className="mt-1 w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                placeholder="Email"
+                className="mt-1 w-full bg-transparent outline-none placeholder-slate-800 border-2 rounded-sm font-light border-gray-400 px-2 py-3"
+                placeholder="Enter Email"
                 {...register("email", {
                   required: "Email is required",
                   pattern: {
@@ -124,8 +124,8 @@ const Contact = () => {
               </label>
               <textarea
                 rows="4"
-                className="mt-1 w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                placeholder="Message"
+                className="mt-1 w-full bg-transparent outline-none placeholder-slate-800 border-2 rounded-sm font-light border-gray-400 px-2 py-3"
+                placeholder="Enter Message"
                 {...register("message", { required: "Message is required" })}
                 style={{
                   borderImageSource:
