@@ -84,6 +84,7 @@ const LandingHeader = () => {
                 {option.name}
               </Link>
             ))}
+            <Link className={`link text-sm `}>Blogs</Link>
           </div>
         </div>
         <Drawer
@@ -115,6 +116,7 @@ const LandingHeader = () => {
                 {name}
               </Link>
             ))}
+            <Link className={`link text-sm `}>Blogs</Link>
           </div>
         </Drawer>
         <div

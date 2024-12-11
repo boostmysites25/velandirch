@@ -27,6 +27,7 @@ const WebsiteFooter = () => {
                   {name}
                 </Link>
               ))}
+              <Link className={`link text-sm `}>Blogs</Link>
             </div>
             <div className="flex flex-col gap-2">
               <h6 className="font-medium mb-1">Contact Us</h6>
@@ -37,6 +38,15 @@ const WebsiteFooter = () => {
                   className="text-white desc text-sm"
                 >
                   {companyDetails.phone}
+                </Link>
+              </div>
+              <div className="flex flex-col">
+                <h6 className="text-[.9rem] mb-1">Email</h6>
+                <Link
+                  // to={`tel:${companyDetails.email}`}
+                  className="text-white desc text-sm"
+                >
+                  {companyDetails.email}
                 </Link>
               </div>
               <div className="flex flex-col mt-2">
