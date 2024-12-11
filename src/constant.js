@@ -42,9 +42,13 @@ import aboutusintrotwo from "./assets/images/aboutusintrotwo.jpg";
 import allbgimage from "./assets/images/allbgimage.jpg";
 import { lazy } from "react";
 import { BiBrain, BiBulb, BiRocket } from "react-icons/bi";
-import { GoGraph } from "react-icons/go";
+import { GoFileMedia, GoGraph } from "react-icons/go";
 import { SlBadge } from "react-icons/sl";
-import { MdOutlineDeveloperMode } from "react-icons/md";
+import {
+  MdOutlineDashboardCustomize,
+  MdOutlineDeveloperMode,
+  MdPermMedia,
+} from "react-icons/md";
 import {
   GiArtificialIntelligence,
   GiRobotLeg,
@@ -52,9 +56,14 @@ import {
 } from "react-icons/gi";
 import { HiChatBubbleBottomCenterText } from "react-icons/hi2";
 import { BsFillClipboard2DataFill } from "react-icons/bs";
-import { FaGamepad } from "react-icons/fa";
-import { SiHiveBlockchain } from "react-icons/si";
-import { IoMdCloudDone } from "react-icons/io";
+import { FaAppStoreIos, FaGamepad } from "react-icons/fa";
+import { SiFlutter, SiHiveBlockchain } from "react-icons/si";
+import { IoLogoAndroid, IoMdCloudDone } from "react-icons/io";
+import { CgWebsite } from "react-icons/cg";
+import { TfiLayoutMediaRightAlt } from "react-icons/tfi";
+import { RiCustomSize } from "react-icons/ri";
+import { TbDeviceMobileCode } from "react-icons/tb";
+
 const Home = lazy(() => import("./pages/website/Home"));
 const Services = lazy(() => import("./pages/website/Services"));
 const ContactUs = lazy(() => import("./pages/website/ContactUs"));
@@ -171,12 +180,14 @@ export const webDevelopmentServices = [
     id: 1,
     title: "E-commerce Websites",
     icon: require("./assets/images/icons/online-shopping.png"),
+    img: <CgWebsite />,
     description:
       "Empowering online businesses with tailored e-commerce solutions powered by AI. Our platforms enhance customer engagement, streamline operations, and drive substantial revenue growth through personalized shopping experiences and intelligent recommendations.",
   },
   {
     id: 2,
     title: "Social Media Websites",
+    img: <GoFileMedia />,
     icon: require("./assets/images/icons/socialmedia.png"),
     description:
       "Creating custom social media websites that captivate audiences with AI-driven content recommendations and engagement strategies, building brand loyalty and driving growth effortlessly.",
@@ -184,6 +195,7 @@ export const webDevelopmentServices = [
   {
     id: 3,
     title: "Landing Websites",
+    img: <TfiLayoutMediaRightAlt />,
     icon: require("./assets/images/icons/landing-page.png"),
     description:
       "Crafting high-converting landing pages with AI-enhanced design and user behavior tracking to grab attention and inspire action. Designs that showcase your brand’s message and maximize conversions through personalized experiences.",
@@ -191,6 +203,7 @@ export const webDevelopmentServices = [
   {
     id: 4,
     title: "Custom Websites",
+    img: <MdOutlineDashboardCustomize />,
     icon: require("./assets/images/icons/software-development.png"),
     description:
       "Delivering bespoke websites powered by AI to meet your unique business needs. Our solutions seamlessly combine creativity, functionality, and AI-driven features for an exceptional online presence.",
@@ -202,6 +215,7 @@ export const appDevelopmentServices = [
   {
     id: 1,
     title: "iOS App Development",
+    img: <FaAppStoreIos />,
     icon: require("./assets/images/icons/ios-development.png"),
     description:
       "Specializing in iOS app development using Swift and Objective-C. Delivering apps optimized for performance, speed, and responsiveness with AI-powered features like predictive analytics and personalized user experiences.",
@@ -209,6 +223,7 @@ export const appDevelopmentServices = [
   {
     id: 2,
     title: "Android App Development",
+    img: <IoLogoAndroid />,
     icon: require("./assets/images/icons/android-development.png"),
     description:
       "Designing and developing Android apps tailored to your business goals. Leveraging Java and Kotlin alongside AI technologies to create robust, efficient applications with intelligent automation and enhanced user engagement.",
@@ -216,6 +231,8 @@ export const appDevelopmentServices = [
   {
     id: 3,
     title: "Flutter App Development",
+    img: <SiFlutter />,
+
     icon: require("./assets/images/icons/flutter-development.png"),
     description:
       "Using Flutter to create apps for both iOS and Android with a single codebase. Integrating AI-driven solutions to overcome challenges, enhance performance, and deliver smarter, feature-rich applications.",
@@ -223,6 +240,7 @@ export const appDevelopmentServices = [
   {
     id: 4,
     title: "Hybrid App Development",
+    img: <TbDeviceMobileCode />,
     icon: require("./assets/images/icons/hybrid-app-development.png"),
     description:
       "Developing feature-rich hybrid apps tailored to your business needs. Incorporating AI-powered tools to create mobile-friendly apps that work seamlessly across iOS and Android platforms while delivering intelligent insights and improved functionality.",

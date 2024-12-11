@@ -25,6 +25,8 @@ import landingpagevideo from "../../assets/videos/landingpagevideo.mp4";
 import Faqs from "../../componets/common/Faqs";
 import { useForm } from "react-hook-form";
 import Credibility from "../../componets/common/Credibility";
+import image from "../../assets/images/contactimage.jpg";
+
 export const LandingPage = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
   const {
@@ -98,24 +100,37 @@ export const LandingPage = ({ page }) => {
               <h2 className="heading-2">Get In Touch With Us!</h2>
               <p className="desc">
                 Get in touch with{" "}
-                <span className="font-semibold">VELANDIRCH AI</span>
+                <span className="font-semibold">VELANDIRCH AI </span>
                 and let us be the catalyst for your digital transformation.
                 Together, we can create solutions that align with your vision,
                 helping your business reach new heights.
               </p>
+              <img
+                src={image}
+                alt=""
+                className="max-h-[21rem] object-cover rounded-xl"
+              />
             </div>
             <form
               onSubmit={handleSubmit(onSubmit)}
               className="flex flex-col gap-4 md:px-[1rem]"
             >
-              <div className="">
+              <div className="hover:scale-105 transition-all duration-500">
+                <label htmlFor="" className="mb-6 font-medium">
+                  Full Name
+                </label>
                 <input
                   type="text"
-                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                  placeholder="Full Name"
+                  className="mt-1 w-full placeholder-slate-800 bg-transparent outline-none border-2 rounded-sm font-light border-gray-400 px-2 py-3"
+                  placeholder="Enter Full Name"
                   {...register("fullName", {
                     required: "Full name is required",
                   })}
+                  style={{
+                    borderImageSource:
+                      "linear-gradient(90deg, rgba(250,120,67,0.545) 0%, rgba(164,164,164,0.612) 100%)",
+                    borderImageSlice: 1,
+                  }}
                 />
                 {errors.fullName && (
                   <span className="text-red-500 text-sm">
@@ -124,11 +139,14 @@ export const LandingPage = ({ page }) => {
                 )}
               </div>
 
-              <div className="">
+              <div className="hover:scale-105 transition-all duration-500">
+                <label htmlFor="" className="mb-6 font-medium">
+                  Mobile Number
+                </label>
                 <input
                   type="text"
-                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                  placeholder="Mobile Number"
+                  className="mt-1 w-full bg-transparent outline-none placeholder-slate-800 border-2 rounded-sm font-light border-gray-400 px-2 py-3"
+                  placeholder="Enter Mobile Number"
                   {...register("mobileNumber", {
                     required: "Mobile number is required",
                     pattern: {
@@ -136,6 +154,11 @@ export const LandingPage = ({ page }) => {
                       message: "Invalid phone number",
                     },
                   })}
+                  style={{
+                    borderImageSource:
+                      "linear-gradient(90deg, rgba(250,120,67,0.545) 0%, rgba(164,164,164,0.612) 100%)",
+                    borderImageSlice: 1,
+                  }}
                 />
                 {errors.mobileNumber && (
                   <span className="text-red-500 text-sm">
@@ -144,11 +167,14 @@ export const LandingPage = ({ page }) => {
                 )}
               </div>
 
-              <div className="">
+              <div className="hover:scale-105 transition-all duration-500">
+                <label htmlFor="" className="mb-6 font-medium">
+                  Email
+                </label>
                 <input
                   type="email"
-                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                  placeholder="Email"
+                  className="mt-1 w-full bg-transparent outline-none placeholder-slate-800 border-2 rounded-sm font-light border-gray-400 px-2 py-3"
+                  placeholder="Enter Email"
                   {...register("email", {
                     required: "Email is required",
                     pattern: {
@@ -156,6 +182,11 @@ export const LandingPage = ({ page }) => {
                       message: "Invalid email address",
                     },
                   })}
+                  style={{
+                    borderImageSource:
+                      "linear-gradient(90deg, rgba(250,120,67,0.545) 0%, rgba(164,164,164,0.612) 100%)",
+                    borderImageSlice: 1,
+                  }}
                 />
                 {errors.email && (
                   <span className="text-red-500 text-sm">
@@ -164,12 +195,20 @@ export const LandingPage = ({ page }) => {
                 )}
               </div>
 
-              <div className="">
+              <div className="hover:scale-105 transition-all duration-500">
+                <label htmlFor="" className="mb-6 font-medium">
+                  Message
+                </label>
                 <textarea
                   rows="4"
-                  className="w-full bg-transparent outline-none border rounded-sm font-light border-gray-400 px-2 py-3"
-                  placeholder="Message"
+                  className="mt-1 w-full bg-transparent outline-none placeholder-slate-800 border-2 rounded-sm font-light border-gray-400 px-2 py-3"
+                  placeholder="Enter Message"
                   {...register("message", { required: "Message is required" })}
+                  style={{
+                    borderImageSource:
+                      "linear-gradient(90deg, rgba(250,120,67,0.545) 0%, rgba(164,164,164,0.612) 100%)",
+                    borderImageSlice: 1,
+                  }}
                 />
                 {errors.message && (
                   <span className="text-red-500 text-sm">
