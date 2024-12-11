@@ -21,7 +21,7 @@ import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
 import Testimonials from "../../componets/common/Testimonials";
 import Portfolio from "../../componets/landingPages/Portfolio";
 import ReactPlayer from "react-player";
-import landingpagevideo from "../../assets/videos/landingpagevideo.mp4";
+import landingpagevideo from "../../assets/videos/home-banner.mp4";
 import Faqs from "../../componets/common/Faqs";
 import { useForm } from "react-hook-form";
 import Credibility from "../../componets/common/Credibility";
