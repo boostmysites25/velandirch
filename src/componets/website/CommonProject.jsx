@@ -160,8 +160,10 @@ const CommonProject = () => {
                   {/* ${obj.title === "House of Deliverance" && `2xl:min-h-[480px]`} */}
                 </div>
                 <div className="px-3 mt-3 pb-5 max-h-[96px]">
-                  <h4 className="font-semibold text-xl">{obj.title}</h4>
-                  <p className="desc">{obj.description}</p>
+                  <h4 className="font-semibold text-xl text-center">
+                    {obj.title}
+                  </h4>
+                  <p className="desc text-center">{obj.description}</p>
                 </div>
               </div>
             ))}

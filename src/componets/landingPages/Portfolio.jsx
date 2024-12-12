@@ -72,7 +72,7 @@ const Portfolio = ({ page }) => {
           <p className="gradient-text uppercase gradient-rounded-text-box">
             Portfolio
           </p>
-          <h2 className="heading text-center mb-5">Our Selected Projects</h2>
+          <h2 className="heading text-center my-16">Our Selected Projects</h2>
           <div ref={sliderRef} className="keen-slider">
             {portfolio.map((obj) => (
               <div
@@ -80,18 +80,18 @@ const Portfolio = ({ page }) => {
                 className="keen-slider__slide border-4 border-primary/40 rounded-xl bg-custom-gradient "
                 // data-aos="fade-up"
               >
-                <div
+                {/* <div
                   className={`  lg:max-h-[316px]  2xl:max-h-[467px] 2xl:min-h-[467px]
-                  w-full overflow-hidden object-cover`}
-                >
-                  {/* ${obj.title === "House of Deliverance" && `2xl:min-h-[480px]`} */}
-                  <img
-                    src={obj.img}
-                    alt={obj.title}
-                    className={`hover:scale-105 transition-all max-h-[296px] min-h-[296px]  lg:max-h-[316px] lg:min-h-[316px]  2xl:max-h-[467px] 2xl:min-h-[467px] duration-300 !h-full w-full object-cover `}
-                  />
-                  {/* ${obj.title === "House of Deliverance" && `2xl:min-h-[480px]`} */}
-                </div>
+                  w-full overflow-hidden `}
+                > */}
+                {/* ${obj.title === "House of Deliverance" && `2xl:min-h-[480px]`} */}
+                <img
+                  src={obj.img}
+                  alt={obj.title}
+                  className="rounded-t-xl hover:scale-105 transition-all duration-300 lg:max-h-[316px] w-full  2xl:max-h-[467px] object-cover"
+                />
+                {/* ${obj.title === "House of Deliverance" && `2xl:min-h-[480px]`} */}
+                {/* </div> */}
                 <div className="px-3 mt-3 pb-5 max-h-[96px]">
                   <h4 className="font-semibold text-xl">{obj.title}</h4>
                   <p className="desc">{obj.description}</p>
