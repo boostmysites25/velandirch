@@ -108,20 +108,26 @@ const LandingHeader = () => {
             </button>
           </div>
           <div className="flex flex-col gap-6">
-            {options.map(({ name, path, id }) => (
-              <Link
-                onClick={() => setIsOpen(false)}
-                key={id}
-                className="text-3xl text-white font-medium transition-colors duration-300 link"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={1000}
-              >
-                {name}
-              </Link>
-            ))}
+            {options.map((option) =>
+              option.name === "Home" ? (
+                <CustomLink key={option.path} to={`/`} className="link text-sm">
+                  Home
+                </CustomLink>
+              ) : (
+                <Link
+                  to={option.path}
+                  className="link text-sm"
+                  key={option.path}
+                  spy={true}
+                  smooth={true}
+                  offset={-60}
+                  duration={1000}
+                  activeClass="active-link"
+                >
+                  {option.name}
+                </Link>
+              )
+            )}
             <Link className={`link text-sm `}>Blogs</Link>
           </div>
         </Drawer>
