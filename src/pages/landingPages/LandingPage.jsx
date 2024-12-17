@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import section5Img1 from "../../assets/images/section-5-img-1.png";
 // import section5Img2 from "../../assets/images/section-5-img-2.png";
 // import section5Img3 from "../../assets/images/section-5-img-3.png";
@@ -10,6 +10,7 @@ import Contact from "../../componets/landingPages/Contact";
 import {
   appDevBanner,
   appLandingAbout,
+  companyDetails,
   webDevBanner,
   webLandingAbout,
 } from "../../constant";
@@ -26,19 +27,56 @@ import Faqs from "../../componets/common/Faqs";
 import { useForm } from "react-hook-form";
 import Credibility from "../../componets/common/Credibility";
 import image from "../../assets/images/contactimage.jpg";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 export const LandingPage = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
+  const [spinner, setSpinner] = useState(false);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset,
   } = useForm();
+  const navigate = useNavigate();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
-    reset();
+    setSpinner(true);
+
+    var emailBody = "Name: " + data.fullName + "\n\n";
+    emailBody += "Email: " + data.email + "\n\n";
+    emailBody += "Phone: " + data.mobileNumber + "\n\n";
+    // emailBody += "Subject: " + data.subject + "\n\n";
+    emailBody += "Message:\n" + data.message;
+
+    // Construct the request payload
+    var payload = {
+      to: companyDetails.email,
+      // to: "remeesreme4u@gmail.com",
+      subject: "You have a new message from Velandirch",
+      body: emailBody,
+    };
+
+    await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        toast.success("Email sent successfully");
+        reset();
+        navigate("/thank-you");
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      })
+      .finally(() => setSpinner(false));
   };
   return (
     <>
@@ -402,7 +440,7 @@ export const LandingPage = ({ page }) => {
               </div>
 
               <button className="primary-btn" type="submit">
-                Submit
+                {spinner ? "Sending..." : "Submit"}
               </button>
             </form>
           </div>

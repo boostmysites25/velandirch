@@ -1,23 +1,60 @@
-import React, { lazy } from "react";
+import React, { lazy, useState } from "react";
 import Banner from "../../componets/website/Banner";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaPhone } from "react-icons/fa";
 import { companyDetails } from "../../constant";
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFacebook, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 const MapComponent = lazy(() => import("../../componets/website/MapComponent"));
 
 const ContactUs = () => {
+  const [spinner, setSpinner] = useState(false);
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
+  const navigate = useNavigate();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
+    setSpinner(true);
+
+    var emailBody = "Name: " + data.name + "\n\n";
+    emailBody += "Email: " + data.email + "\n\n";
+    emailBody += "Phone: " + data.phone + "\n\n";
+    emailBody += "Subject: " + data.subject + "\n\n";
+    emailBody += "Message:\n" + data.message;
+
+    // Construct the request payload
+    var payload = {
+      to: companyDetails.email,
+      // to: "remeesreme4u@gmail.com",
+      subject: "You have a new message from Velandirch",
+      body: emailBody,
+    };
+
+    await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        toast.success("Email sent successfully");
+        reset();
+        navigate("/thank-you");
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      })
+      .finally(() => setSpinner(false));
   };
   return (
     <>
@@ -141,15 +178,11 @@ const ContactUs = () => {
                     placeholder="Subject"
                     {...register("subject", {
                       required: "Subject is required",
-                      pattern: {
-                        value: /^[0-9]{10}$/,
-                        message: "Invalid phone number",
-                      },
                     })}
                   />
-                  {errors.phone && (
+                  {errors.subject && (
                     <span className="text-red-500 text-sm">
-                      {errors.phone.message}
+                      {errors.subject.message}
                     </span>
                   )}
                 </div>
@@ -174,7 +207,7 @@ const ContactUs = () => {
                   type="submit"
                   className="text-white hover:text-white cursor-pointer font-light tracking-wide  border bg-primary/60 border-primary hover:bg-primary text-sm  hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-4 min-w-[7rem] flex justify-center text-center transition-all duration-300"
                 >
-                  Send Message
+                  {spinner ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>

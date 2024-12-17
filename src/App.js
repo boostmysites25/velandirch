@@ -23,6 +23,8 @@ import MachineLearning from "./componets/website/serivces/MachineLearning.jsx";
 import CloudComputing from "./componets/website/serivces/CloudComputing.jsx";
 import RPA from "./componets/website/serivces/RPA.jsx";
 import WhatsAppIcon from "./componets/common/Whatsapp.jsx";
+import { Toaster } from "react-hot-toast";
+import Thankyou from "./componets/common/ThankYou.jsx";
 
 AOS.init({
   once: true,
@@ -36,11 +38,21 @@ export default function App() {
       <LoadingSpinnerContext />
       <Suspense fallback={<LoadingSpinner />}>
         <WhatsAppIcon />
+        <Toaster
+          position="top-bottom"
+          toastOptions={{
+            style: {
+              background: "#010C2A",
+              color: "#ffffff",
+            },
+          }}
+        />
         <ScrollToTop />
         <Routes>
           {/* Website Pages */}
           {routes.map(({ component, name, path }, index) => (
             <Route
+              key={index}
               path={path}
               element={
                 <>
@@ -51,6 +63,8 @@ export default function App() {
               }
             />
           ))}
+
+          <Route path="/thank-you" element={<Thankyou />} />
 
           <Route path="/services" element={<ServicePageLayout />}>
             <Route path="web-app-development" element={<WebAppDevelopment />} />
