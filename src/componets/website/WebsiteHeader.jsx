@@ -59,7 +59,6 @@ const WebsiteHeader = () => {
                 {name}
               </Link>
             ))}
-            <Link className={`link text-sm `}>Blogs</Link>
           </div>
         </div>
         <Drawer

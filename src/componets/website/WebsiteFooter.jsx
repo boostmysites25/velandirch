@@ -27,7 +27,12 @@ const WebsiteFooter = () => {
                   {name}
                 </Link>
               ))}
-              <Link className={`link text-sm `}>Blogs</Link>
+              <Link 
+                to="/privacy-policy"
+                className="text-white desc text-sm hover:text-primary transition-all duration-300"
+              >
+                Privacy Policy
+              </Link>
             </div>
             <div className="flex flex-col gap-2">
               <h6 className="font-medium mb-1">Contact Us</h6>

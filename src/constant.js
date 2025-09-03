@@ -61,7 +61,6 @@ import { SiFlutter, SiHiveBlockchain } from "react-icons/si";
 import { IoLogoAndroid, IoMdCloudDone } from "react-icons/io";
 import { CgWebsite } from "react-icons/cg";
 import { TfiLayoutMediaRightAlt } from "react-icons/tfi";
-import { RiCustomSize } from "react-icons/ri";
 import { TbDeviceMobileCode } from "react-icons/tb";
 
 const Home = lazy(() => import("./pages/website/Home"));

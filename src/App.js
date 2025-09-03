@@ -7,7 +7,7 @@ import LandingFooter from "./componets/landingPages/LandingFooter";
 import WebsiteHeader from "./componets/website/WebsiteHeader";
 import WebsiteFooter from "./componets/website/WebsiteFooter";
 import { routes } from "./constant";
-import { Suspense, useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { LoadingSpinner } from "./componets/common/LoadingSpinner";
 import SpinnerContextProvider, {
   LoadingSpinnerContext,
@@ -25,6 +25,8 @@ import RPA from "./componets/website/serivces/RPA.jsx";
 import WhatsAppIcon from "./componets/common/Whatsapp.jsx";
 import { Toaster } from "react-hot-toast";
 import Thankyou from "./componets/common/ThankYou.jsx";
+
+const PrivacyPolicy = lazy(() => import("./pages/website/PrivacyPolicy"));
 
 AOS.init({
   once: true,
@@ -64,6 +66,16 @@ export default function App() {
             />
           ))}
 
+          <Route
+            path="/privacy-policy"
+            element={
+              <>
+                <WebsiteHeader />
+                <PrivacyPolicy />
+                <WebsiteFooter />
+              </>
+            }
+          />
           <Route path="/thank-you" element={<Thankyou />} />
 
           <Route path="/services" element={<ServicePageLayout />}>
