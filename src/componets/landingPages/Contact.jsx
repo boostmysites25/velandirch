@@ -22,8 +22,9 @@ const Contact = () => {
     var emailBody = "Name: " + data.fullName + "\n\n";
     emailBody += "Email: " + data.email + "\n\n";
     emailBody += "Phone: " + data.mobileNumber + "\n\n";
-    // emailBody += "Subject: " + data.subject + "\n\n";
-    emailBody += "Message:\n" + data.message;
+    emailBody += "Service Type: " + data.serviceType + "\n\n";
+    emailBody += "Budget Range: " + data.budgetRange + "\n\n";
+    emailBody += "Project Requirements:\n" + data.message;
 
     // Construct the request payload
     var payload = {
@@ -162,13 +163,76 @@ const Contact = () => {
 
             <div className="hover:scale-105 transition-all duration-500">
               <label htmlFor="" className="mb-6 font-medium">
-                Message
+                Type of Service
+              </label>
+              <select
+                className="mt-1 w-full bg-transparent outline-none border-2 rounded-sm font-light border-gray-400 px-2 py-3"
+                {...register("serviceType", { required: "Service type is required" })}
+                style={{
+                  borderImageSource:
+                    "linear-gradient(90deg, rgba(250,120,67,0.545) 0%, rgba(164,164,164,0.612) 100%)",
+                  borderImageSlice: 1,
+                }}
+              >
+                <option value="">Select Service Type</option>
+                <option value="web-development">Web Development</option>
+                <option value="app-development">App Development</option>
+                <option value="ai-development">AI Development</option>
+                <option value="chatbot-development">Chatbot Development</option>
+                <option value="data-analytics">Data Analytics</option>
+                <option value="game-development">Game Development</option>
+                <option value="blockchain-development">Blockchain Development</option>
+                <option value="machine-learning">Machine Learning</option>
+                <option value="cloud-computing">Cloud Computing</option>
+                <option value="rpa">RPA (Robotic Process Automation)</option>
+                <option value="consultation">Consultation</option>
+                <option value="other">Other</option>
+              </select>
+              {errors.serviceType && (
+                <span className="text-red-500 text-sm">
+                  {errors.serviceType.message}
+                </span>
+              )}
+            </div>
+
+            <div className="hover:scale-105 transition-all duration-500">
+              <label htmlFor="" className="mb-6 font-medium">
+                Budget Range
+              </label>
+              <select
+                className="mt-1 w-full bg-transparent outline-none border-2 rounded-sm font-light border-gray-400 px-2 py-3"
+                {...register("budgetRange", { required: "Budget range is required" })}
+                style={{
+                  borderImageSource:
+                    "linear-gradient(90deg, rgba(250,120,67,0.545) 0%, rgba(164,164,164,0.612) 100%)",
+                  borderImageSlice: 1,
+                }}
+              >
+                <option value="">Select Budget Range</option>
+                <option value="under-10k">Under $10,000</option>
+                <option value="10k-25k">$10,000 - $25,000</option>
+                <option value="25k-50k">$25,000 - $50,000</option>
+                <option value="50k-100k">$50,000 - $100,000</option>
+                <option value="100k-250k">$100,000 - $250,000</option>
+                <option value="250k-plus">$250,000+</option>
+                <option value="discuss">Let's Discuss</option>
+              </select>
+              {errors.budgetRange && (
+                <span className="text-red-500 text-sm">
+                  {errors.budgetRange.message}
+                </span>
+              )}
+            </div>
+
+            <div className="hover:scale-105 transition-all duration-500">
+              <label htmlFor="" className="mb-6 font-medium">
+                Project Requirements
               </label>
               <textarea
                 rows="4"
                 className="mt-1 w-full bg-transparent outline-none placeholder-slate-800 border-2 rounded-sm font-light border-gray-400 px-2 py-3"
-                placeholder="Enter Message"
-                {...register("message", { required: "Message is required" })}
+                placeholder="Describe your project requirements in detail"
+                {...register("message", { required: "Project requirements are required" })}
                 style={{
                   borderImageSource:
                     "linear-gradient(90deg, rgba(250,120,67,0.545) 0%, rgba(164,164,164,0.612) 100%)",

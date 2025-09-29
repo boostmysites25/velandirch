@@ -27,8 +27,9 @@ const ContactUs = () => {
     var emailBody = "Name: " + data.name + "\n\n";
     emailBody += "Email: " + data.email + "\n\n";
     emailBody += "Phone: " + data.phone + "\n\n";
-    emailBody += "Subject: " + data.subject + "\n\n";
-    emailBody += "Message:\n" + data.message;
+    emailBody += "Service Type: " + data.serviceType + "\n\n";
+    emailBody += "Budget Range: " + data.budgetRange + "\n\n";
+    emailBody += "Project Requirements:\n" + data.message;
 
     // Construct the request payload
     var payload = {
@@ -176,17 +177,52 @@ const ContactUs = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <input
-                    type="tel"
+                  <select
                     className="border-primary/40 p-2 rounded-md border outline-none bg-transparent"
-                    placeholder="Subject"
-                    {...register("subject", {
-                      required: "Subject is required",
+                    {...register("serviceType", {
+                      required: "Service type is required",
                     })}
-                  />
-                  {errors.subject && (
+                  >
+                    <option value="">Select Service Type</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="app-development">App Development</option>
+                    <option value="ai-development">AI Development</option>
+                    <option value="chatbot-development">Chatbot Development</option>
+                    <option value="data-analytics">Data Analytics</option>
+                    <option value="game-development">Game Development</option>
+                    <option value="blockchain-development">Blockchain Development</option>
+                    <option value="machine-learning">Machine Learning</option>
+                    <option value="cloud-computing">Cloud Computing</option>
+                    <option value="rpa">RPA (Robotic Process Automation)</option>
+                    <option value="consultation">Consultation</option>
+                    <option value="other">Other</option>
+                  </select>
+                  {errors.serviceType && (
                     <span className="text-red-500 text-sm">
-                      {errors.subject.message}
+                      {errors.serviceType.message}
+                    </span>
+                  )}
+                </div>
+
+                <div className="flex flex-col gap-1">
+                  <select
+                    className="border-primary/40 p-2 rounded-md border outline-none bg-transparent"
+                    {...register("budgetRange", {
+                      required: "Budget range is required",
+                    })}
+                  >
+                    <option value="">Select Budget Range</option>
+                    <option value="under-10k">Under $10,000</option>
+                    <option value="10k-25k">$10,000 - $25,000</option>
+                    <option value="25k-50k">$25,000 - $50,000</option>
+                    <option value="50k-100k">$50,000 - $100,000</option>
+                    <option value="100k-250k">$100,000 - $250,000</option>
+                    <option value="250k-plus">$250,000+</option>
+                    <option value="discuss">Let's Discuss</option>
+                  </select>
+                  {errors.budgetRange && (
+                    <span className="text-red-500 text-sm">
+                      {errors.budgetRange.message}
                     </span>
                   )}
                 </div>
@@ -195,9 +231,9 @@ const ContactUs = () => {
                   <textarea
                     rows="6"
                     className="border-primary/40 p-2 rounded-md border outline-none bg-transparent"
-                    placeholder="Message"
+                    placeholder="Describe your project requirements in detail"
                     {...register("message", {
-                      required: "Message is required",
+                      required: "Project requirements are required",
                     })}
                   />
                   {errors.message && (
