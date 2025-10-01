@@ -212,7 +212,7 @@ const ContactUs = () => {
                     value={serviceType}
                     onChange={setServiceType}
                     placeholder="Select Service Type"
-                    className="border-primary/40 p-2 rounded-md border outline-none bg-transparent"
+                    className="text-white border-primary/40 p-2 rounded-md border outline-none bg-transparent"
                     register={register}
                     name="serviceType"
                     validation={{ required: "Service type is required" }}
@@ -230,7 +230,7 @@ const ContactUs = () => {
                     value={budgetRange}
                     onChange={setBudgetRange}
                     placeholder="Select Budget Range"
-                    className="border-primary/40 p-2 rounded-md border outline-none bg-transparent"
+                    className="text-white border-primary/40 p-2 rounded-md border outline-none bg-transparent"
                     register={register}
                     name="budgetRange"
                     validation={{ required: "Budget range is required" }}
