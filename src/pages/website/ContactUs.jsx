@@ -216,7 +216,7 @@ const ContactUs = () => {
                     register={register}
                     name="serviceType"
                     validation={{ required: "Service type is required" }}
-                    color="text-white"
+                    color="white"
                   />
                   {errors.serviceType && (
                     <span className="text-red-500 text-sm">
@@ -235,6 +235,7 @@ const ContactUs = () => {
                     register={register}
                     name="budgetRange"
                     validation={{ required: "Budget range is required" }}
+                    color="white"
                   />
                   {errors.budgetRange && (
                     <span className="text-red-500 text-sm">

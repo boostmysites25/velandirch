@@ -106,7 +106,7 @@ const Contact = () => {
             <img
               src={image}
               alt=""
-              className="max-h-[21rem] object-cover rounded-xl"
+              className="max-h-[21rem] md:max-h-max object-cover rounded-xl"
             />
           </div>
           <form

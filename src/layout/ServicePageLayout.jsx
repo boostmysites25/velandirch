@@ -8,6 +8,7 @@ import WebsiteFooter from "../componets/website/WebsiteFooter";
 import { companyDetails, allServices } from "../constant";
 import ServiceDetailsBanner from "../componets/common/ServiceBannerDetails";
 import GetInTouch from "../componets/website/GetInTouch";
+import Contact from "../componets/landingPages/Contact";
 
 const ServicePageLayout = () => {
   const { pathname } = useLocation();
@@ -154,7 +155,7 @@ const ServicePageLayout = () => {
           </Link>
         </div>
       </div>
-      <GetInTouch />
+      <Contact />
       <WebsiteFooter />
     </>
   );

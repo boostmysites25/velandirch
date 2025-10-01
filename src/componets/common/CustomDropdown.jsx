@@ -55,6 +55,11 @@ const CustomDropdown = ({
 
   const selectedOption = options.find((option) => option.value === value);
 
+  const selectedColor =
+    color === "white"
+      ? { activeClr: "text-white", inactiveClr: "text-slate-200/70" }
+      : { activeClr: "text-black", inactiveClr: "text-slate-800" };
+
   return (
     <div className="relative" ref={dropdownRef}>
       <div
@@ -65,7 +70,7 @@ const CustomDropdown = ({
         <div className="flex items-center justify-between">
           <span
             className={
-              value ? color || "text-black" : color || "text-slate-800"
+              value ? selectedColor.activeClr : selectedColor.inactiveClr
             }
           >
             {selectedOption ? selectedOption.label : placeholder}
