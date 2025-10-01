@@ -12,8 +12,8 @@ const CustomDropdown = ({
   validation = {}
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedValue, setSelectedValue] = useState(value || "");
   const dropdownRef = useRef(null);
+  const inputRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -28,13 +28,31 @@ const CustomDropdown = ({
     };
   }, []);
 
+  // Get the register props
+  const registerProps = register ? register(name, validation) : {};
+  
+  // Extract onChange from registerProps to avoid passing it to the hidden input
+  // We'll handle onChange manually
+  const { onChange: rhfOnChange, ...restRegisterProps } = registerProps;
+
   const handleSelect = (optionValue, optionLabel) => {
-    setSelectedValue(optionValue);
     onChange(optionValue);
     setIsOpen(false);
+    
+    // Update the hidden input value directly and trigger react-hook-form onChange
+    if (inputRef.current && rhfOnChange) {
+      // Set the value directly on the DOM element
+      inputRef.current.value = optionValue;
+      
+      // Create a synthetic change event with the updated value
+      const syntheticEvent = {
+        target: inputRef.current
+      };
+      rhfOnChange(syntheticEvent);
+    }
   };
 
-  const selectedOption = options.find(option => option.value === selectedValue);
+  const selectedOption = options.find(option => option.value === value);
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -44,7 +62,7 @@ const CustomDropdown = ({
         style={style}
       >
         <div className="flex items-center justify-between">
-          <span className={selectedValue ? "text-black" : "text-slate-800"}>
+          <span className={value ? "text-black" : "text-slate-800"}>
             {selectedOption ? selectedOption.label : placeholder}
           </span>
           <svg
@@ -82,8 +100,12 @@ const CustomDropdown = ({
       {/* Hidden input for form validation */}
       <input
         type="hidden"
-        {...register(name, validation)}
-        value={selectedValue}
+        {...restRegisterProps}
+        ref={(e) => {
+          inputRef.current = e;
+          if (restRegisterProps.ref) restRegisterProps.ref(e);
+        }}
+        value={value}
       />
     </div>
   );
