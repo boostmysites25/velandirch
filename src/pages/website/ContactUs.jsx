@@ -212,10 +212,11 @@ const ContactUs = () => {
                     value={serviceType}
                     onChange={setServiceType}
                     placeholder="Select Service Type"
-                    className="text-white border-primary/40 p-2 rounded-md border outline-none bg-transparent"
+                    className="border-primary/40 p-2 rounded-md border outline-none bg-transparent"
                     register={register}
                     name="serviceType"
                     validation={{ required: "Service type is required" }}
+                    color="text-white"
                   />
                   {errors.serviceType && (
                     <span className="text-red-500 text-sm">

@@ -1,15 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 
-const CustomDropdown = ({ 
-  options, 
-  value, 
-  onChange, 
-  placeholder, 
-  className = "", 
+const CustomDropdown = ({
+  options,
+  value,
+  onChange,
+  placeholder,
+  className = "",
   style = {},
   register,
   name,
-  validation = {}
+  validation = {},
+  color,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -30,7 +31,7 @@ const CustomDropdown = ({
 
   // Get the register props
   const registerProps = register ? register(name, validation) : {};
-  
+
   // Extract onChange from registerProps to avoid passing it to the hidden input
   // We'll handle onChange manually
   const { onChange: rhfOnChange, ...restRegisterProps } = registerProps;
@@ -38,21 +39,21 @@ const CustomDropdown = ({
   const handleSelect = (optionValue, optionLabel) => {
     onChange(optionValue);
     setIsOpen(false);
-    
+
     // Update the hidden input value directly and trigger react-hook-form onChange
     if (inputRef.current && rhfOnChange) {
       // Set the value directly on the DOM element
       inputRef.current.value = optionValue;
-      
+
       // Create a synthetic change event with the updated value
       const syntheticEvent = {
-        target: inputRef.current
+        target: inputRef.current,
       };
       rhfOnChange(syntheticEvent);
     }
   };
 
-  const selectedOption = options.find(option => option.value === value);
+  const selectedOption = options.find((option) => option.value === value);
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -62,7 +63,11 @@ const CustomDropdown = ({
         style={style}
       >
         <div className="flex items-center justify-between">
-          <span className={value ? "text-black" : "text-slate-800"}>
+          <span
+            className={
+              value ? color || "text-black" : color || "text-slate-800"
+            }
+          >
             {selectedOption ? selectedOption.label : placeholder}
           </span>
           <svg
